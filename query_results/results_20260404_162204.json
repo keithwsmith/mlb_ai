@@ -1,0 +1,704 @@
+{
+  "timestamp": "2026-04-04T16:22:04.733367",
+  "total_queries": 4,
+  "successful": 4,
+  "failed": 0,
+  "success_rate": 100.0,
+  "total_time": 1.240297555923462,
+  "results": [
+    {
+      "question": "roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024",
+      "sql": "SELECT r25.person__full_name, r25.position__name, r25.jersey_number FROM dw.rosters r25 JOIN dw.teams t ON t.id = r25.parent_team_id WHERE t.name = 'New York Mets' AND r25.season = 2025 AND r25.status__code = 'A' AND r25.person__id NOT IN (SELECT r24.person__id FROM dw.rosters r24 JOIN dw.teams t2 ON t2.id = r24.parent_team_id WHERE t2.name = 'New York Mets' AND r24.season = 2024) ORDER BY r25.position__type, r25.person__full_name;",
+      "rows": [
+        [
+          "Hayden Senger",
+          "Catcher",
+          "30"
+        ],
+        [
+          "Ronny Mauricio",
+          "Third Base",
+          "10"
+        ],
+        [
+          "Jared Young",
+          "Outfielder",
+          "29"
+        ],
+        [
+          "Juan Soto",
+          "Outfielder",
+          "22"
+        ],
+        [
+          "Alex Carrillo",
+          "Pitcher",
+          "84"
+        ],
+        [
+          "Austin Warren",
+          "Pitcher",
+          "44"
+        ],
+        [
+          "Brandon Sproat",
+          "Pitcher",
+          "40"
+        ],
+        [
+          "Brandon Waddell",
+          "Pitcher",
+          "82"
+        ],
+        [
+          "Clay Holmes",
+          "Pitcher",
+          "35"
+        ],
+        [
+          "Huascar Brazob\u00e1n",
+          "Pitcher",
+          "43"
+        ],
+        [
+          "Jonah Tong",
+          "Pitcher",
+          "21"
+        ],
+        [
+          "Jonathan Pintaro",
+          "Pitcher",
+          "91"
+        ],
+        [
+          "Justin Hagenman",
+          "Pitcher",
+          "51"
+        ],
+        [
+          "Nolan McLean",
+          "Pitcher",
+          "26"
+        ],
+        [
+          "Richard Lovelady",
+          "Pitcher",
+          ""
+        ],
+        [
+          "Ryan Helsley",
+          "Pitcher",
+          "56"
+        ],
+        [
+          "Tyler Rogers",
+          "Pitcher",
+          "71"
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.133,
+      "time_db": 0.104,
+      "time_total": 0.238,
+      "error": null,
+      "success": true,
+      "row_count": 17
+    },
+    {
+      "question": "roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025",
+      "sql": "SELECT TOP (100) r26.person__full_name, r26.position__name, r26.jersey_number\nFROM dw.rosters r26\nJOIN dw.teams t ON t.id = r26.parent_team_id\nWHERE t.name = 'New York Mets'\nAND r26.season = 2026\nAND r26.status__code = 'A'\nAND r26.person__id NOT IN (\n    SELECT r25.person__id\n    FROM dw.rosters r25\n    JOIN dw.teams t2 ON t2.id = r25.parent_team_id\n    WHERE t2.name = 'New York Mets'\n        AND r25.season = 2025\n)\nORDER BY r26.position__type, r26.person__full_name",
+      "rows": [
+        [
+          "Ben Rortvedt",
+          "Catcher",
+          "77"
+        ],
+        [
+          "Bo Bichette",
+          "Shortstop",
+          "19"
+        ],
+        [
+          "Jorge Polanco",
+          "Second Base",
+          "11"
+        ],
+        [
+          "Marcus Semien",
+          "Second Base",
+          "10"
+        ],
+        [
+          "Vidal Bruj\u00e1n",
+          "Third Base",
+          "2"
+        ],
+        [
+          "Carson Benge",
+          "Outfield",
+          "3"
+        ],
+        [
+          "Luis Robert Jr.",
+          "Outfielder",
+          "88"
+        ],
+        [
+          "Bryan Hudson",
+          "Pitcher",
+          "78"
+        ],
+        [
+          "Devin Williams",
+          "Pitcher",
+          "38"
+        ],
+        [
+          "Freddy Peralta",
+          "Pitcher",
+          "51"
+        ],
+        [
+          "Luis Garc\u00eda",
+          "Pitcher",
+          "40"
+        ],
+        [
+          "Luke Weaver",
+          "Pitcher",
+          "30"
+        ],
+        [
+          "Tobias Myers",
+          "Pitcher",
+          "32"
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.137,
+      "time_db": 0.13,
+      "time_total": 0.267,
+      "error": null,
+      "success": true,
+      "row_count": 13
+    },
+    {
+      "question": "players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026",
+      "sql": "SELECT TOP (100)  r.person__full_name, t.name AS team_name,\n       r.position__name, r.status__description, r.season\nFROM dw.rosters r\nJOIN dw.teams t ON t.id = r.parent_team_id\nWHERE t.name = 'San Francisco Giants'\n  AND r.season BETWEEN 2024 AND 2026\n  AND r.status__description IN ('Injured 10-Day', 'Injured 15-Day', 'Injured 60-Day')\nORDER BY r.season DESC, r.status__description, r.person__full_name",
+      "rows": [
+        [
+          "Erik Miller",
+          "San Francisco Giants",
+          "Pitcher",
+          "Injured 60-Day",
+          2025
+        ],
+        [
+          "Randy Rodr\u00edguez",
+          "San Francisco Giants",
+          "Pitcher",
+          "Injured 60-Day",
+          2025
+        ],
+        [
+          "Jung Hoo Lee",
+          "San Francisco Giants",
+          "Outfielder",
+          "Injured 60-Day",
+          2024
+        ],
+        [
+          "Keaton Winn",
+          "San Francisco Giants",
+          "Pitcher",
+          "Injured 60-Day",
+          2024
+        ],
+        [
+          "Tom Murphy",
+          "San Francisco Giants",
+          "Catcher",
+          "Injured 60-Day",
+          2024
+        ],
+        [
+          "Wilmer Flores",
+          "San Francisco Giants",
+          "First Base",
+          "Injured 60-Day",
+          2024
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.147,
+      "time_db": 0.122,
+      "time_total": 0.27,
+      "error": null,
+      "success": true,
+      "row_count": 6
+    },
+    {
+      "question": "player, position, signing bonus for the TOP 3 signing bonus for each round in 2025 draft",
+      "sql": "SELECT d.pick_round AS round, d.person__full_name, d.person__primary_position__name, CAST(d.signing_bonus AS decimal(18,2)) AS signing_bonus FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY pick_round ORDER BY CAST(ISNULL(NULLIF(signing_bonus, ''), '0') AS decimal(18,2)) DESC) AS rn FROM dw.draft WHERE year = 2025 AND signing_bonus IS NOT NULL AND signing_bonus <> '') d WHERE d.rn <= 3 ORDER BY d.pick_round, CAST(d.signing_bonus AS decimal(18,2)) DESC;",
+      "rows": [
+        [
+          "1",
+          "Ethan Holliday",
+          "Shortstop",
+          9000000.0
+        ],
+        [
+          "1",
+          "Kade Anderson",
+          "Pitcher",
+          8800000.0
+        ],
+        [
+          "1",
+          "Eli Willits",
+          "Shortstop",
+          8200000.0
+        ],
+        [
+          "10",
+          "Austin Newton",
+          "Pitcher",
+          195100.0
+        ],
+        [
+          "10",
+          "Jake McCutcheon",
+          "Second Base",
+          192200.0
+        ],
+        [
+          "10",
+          "Maximus Martin",
+          "Shortstop",
+          191300.0
+        ],
+        [
+          "11",
+          "CJ Hughes",
+          "Shortstop",
+          700000.0
+        ],
+        [
+          "11",
+          "Truitt Madonna",
+          "Catcher",
+          654000.0
+        ],
+        [
+          "11",
+          "Luke Dotson",
+          "Pitcher",
+          500000.0
+        ],
+        [
+          "12",
+          "Blaine Bullard",
+          "Outfield",
+          1697500.0
+        ],
+        [
+          "12",
+          "Talon Haley",
+          "Pitcher",
+          897500.0
+        ],
+        [
+          "12",
+          "Truman Pauley",
+          "Pitcher",
+          400000.0
+        ],
+        [
+          "13",
+          "Xavier Mitchell",
+          "Pitcher",
+          872500.0
+        ],
+        [
+          "13",
+          "Tyson Moran",
+          "Shortstop",
+          247500.0
+        ],
+        [
+          "13",
+          "Callan Fang",
+          "Pitcher",
+          177500.0
+        ],
+        [
+          "14",
+          "JC Vanek",
+          "First Base",
+          347500.0
+        ],
+        [
+          "14",
+          "TJ Ford",
+          "Outfield",
+          272500.0
+        ],
+        [
+          "14",
+          "Luke Heyman",
+          "Catcher",
+          230000.0
+        ],
+        [
+          "15",
+          "McLane Moody",
+          "Pitcher",
+          460600.0
+        ],
+        [
+          "15",
+          "Andrew Shaffner",
+          "Pitcher",
+          240000.0
+        ],
+        [
+          "15",
+          "DJ Newman",
+          "Two-Way Player",
+          202500.0
+        ],
+        [
+          "16",
+          "Logan Dawson",
+          "Shortstop",
+          242500.0
+        ],
+        [
+          "16",
+          "Alex Breckheimer",
+          "Pitcher",
+          200000.0
+        ],
+        [
+          "16",
+          "Jonathan Stevens",
+          "Pitcher",
+          172400.0
+        ],
+        [
+          "17",
+          "Carter Gwost",
+          "Outfield",
+          497500.0
+        ],
+        [
+          "17",
+          "Sam Horn",
+          "Pitcher",
+          497500.0
+        ],
+        [
+          "17",
+          "Luke Mensik",
+          "Pitcher",
+          482500.0
+        ],
+        [
+          "18",
+          "Grayson Boles",
+          "Pitcher",
+          500000.0
+        ],
+        [
+          "18",
+          "Landon Arroyos",
+          "Shortstop",
+          252500.0
+        ],
+        [
+          "18",
+          "Rylan Mills",
+          "Catcher",
+          247500.0
+        ],
+        [
+          "19",
+          "Chase Bentley",
+          "Pitcher",
+          757500.0
+        ],
+        [
+          "19",
+          "Cory Geinzer",
+          "Pitcher",
+          225000.0
+        ],
+        [
+          "19",
+          "Meridian Leffew",
+          "Shortstop",
+          164500.0
+        ],
+        [
+          "1C",
+          "Caden Bodine",
+          "Catcher",
+          3113300.0
+        ],
+        [
+          "1C",
+          "Wehiwa Aloy",
+          "Shortstop",
+          3042800.0
+        ],
+        [
+          "1C",
+          "Patrick Forbes",
+          "Pitcher",
+          3000000.0
+        ],
+        [
+          "2",
+          "Jaden Fauske",
+          "Outfield",
+          2997500.0
+        ],
+        [
+          "2",
+          "Nick Becker",
+          "Shortstop",
+          2750000.0
+        ],
+        [
+          "2",
+          "Aaron Watson",
+          "Pitcher",
+          2747500.0
+        ],
+        [
+          "20",
+          "Ma'Kale Holden",
+          "Pitcher",
+          410000.0
+        ],
+        [
+          "20",
+          "Jamaurion McQueen",
+          "Outfield",
+          280000.0
+        ],
+        [
+          "20",
+          "Connor Gehr",
+          "Pitcher",
+          230500.0
+        ],
+        [
+          "2C",
+          "Henry Godbout",
+          "Shortstop",
+          1093800.0
+        ],
+        [
+          "3",
+          "Landon Harmon",
+          "Pitcher",
+          2500000.0
+        ],
+        [
+          "3",
+          "Johnny Slawinski",
+          "Pitcher",
+          2497500.0
+        ],
+        [
+          "3",
+          "Anthony Eyanson",
+          "Pitcher",
+          1750000.0
+        ],
+        [
+          "4",
+          "Briggs McKenzie",
+          "Pitcher",
+          2997500.0
+        ],
+        [
+          "4",
+          "Miguel Sime Jr.",
+          "Pitcher",
+          2000000.0
+        ],
+        [
+          "4",
+          "Kaleb Wing",
+          "Pitcher",
+          1500000.0
+        ],
+        [
+          "4C",
+          "Dixon Williams",
+          "Second Base",
+          497500.0
+        ],
+        [
+          "5",
+          "Coy James",
+          "Shortstop",
+          2500000.0
+        ],
+        [
+          "5",
+          "Ty Harvey",
+          "Catcher",
+          1500000.0
+        ],
+        [
+          "5",
+          "CJ Gray",
+          "Pitcher",
+          1247500.0
+        ],
+        [
+          "6",
+          "Josiah Hartshorn",
+          "Outfield",
+          2000000.0
+        ],
+        [
+          "6",
+          "Jack Wheeler",
+          "Third Base",
+          525000.0
+        ],
+        [
+          "6",
+          "Luke LaCourse",
+          "Pitcher",
+          512500.0
+        ],
+        [
+          "7",
+          "Matthew Fisher",
+          "Pitcher",
+          1250000.0
+        ],
+        [
+          "7",
+          "Jase Mitchell",
+          "Catcher",
+          797500.0
+        ],
+        [
+          "7",
+          "Cale Wetwiska",
+          "Pitcher",
+          647500.0
+        ],
+        [
+          "8",
+          "Camden Lohman",
+          "Pitcher",
+          797500.0
+        ],
+        [
+          "8",
+          "Mac Heuer",
+          "Pitcher",
+          400000.0
+        ],
+        [
+          "8",
+          "Tanner Thach",
+          "First Base",
+          325000.0
+        ],
+        [
+          "9",
+          "Reid Worley",
+          "Pitcher",
+          747500.0
+        ],
+        [
+          "9",
+          "Kaiden Wilson",
+          "Pitcher",
+          697500.0
+        ],
+        [
+          "9",
+          "Matthew Ferrara",
+          "Shortstop",
+          597500.0
+        ],
+        [
+          "CB-A",
+          "Slater de Brun",
+          "Outfield",
+          4000000.0
+        ],
+        [
+          "CB-A",
+          "Luke Stevenson",
+          "Catcher",
+          2800000.0
+        ],
+        [
+          "CB-A",
+          "Riley Quick",
+          "Pitcher",
+          2692000.0
+        ],
+        [
+          "CB-B",
+          "Justin Lamkin",
+          "Pitcher",
+          1161200.0
+        ],
+        [
+          "CB-B",
+          "JT Quinn",
+          "Pitcher",
+          1147500.0
+        ],
+        [
+          "CB-B",
+          "Tanner Franklin",
+          "Pitcher",
+          1145900.0
+        ],
+        [
+          "PPI",
+          "Josh Hammond",
+          "Shortstop",
+          3197500.0
+        ],
+        [
+          "SUP-2",
+          "Dean Moss",
+          "Outfield",
+          1285400.0
+        ],
+        [
+          "SUP-2",
+          "Frank Cairone",
+          "Pitcher",
+          1097500.0
+        ],
+        [
+          "SUP-3",
+          "Nate Snead",
+          "Pitcher",
+          597500.0
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.162,
+      "time_db": 0.188,
+      "time_total": 0.351,
+      "error": null,
+      "success": true,
+      "row_count": 75
+    }
+  ]
+}

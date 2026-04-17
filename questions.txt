@@ -1,0 +1,4 @@
+game_pk, home team name, away team name for all games on 2025-06-30
+game_pk, winner, game date how many games did the San Francisco Giants play the Los Angeles Dodgers in 2025
+game_pk, winner, game date how many games did the San Francisco Giants play the Los Angeles Dodgers in 2025
+

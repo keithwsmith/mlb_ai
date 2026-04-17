@@ -1,0 +1,31 @@
+2026-04-09 18:37:07,255 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-09 18:37:07,264 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-09 18:37:07,269 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-09 18:37:07,270 - INFO - Health check: OK
+2026-04-09 18:37:07,272 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-09 18:37:07,275 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 144
+2026-04-09 18:37:07,276 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-09 18:37:07,277 - INFO - Loaded 1 questions from questions.json (list format)
+2026-04-09 18:37:07,278 - INFO - Starting batch processing: 1 questions
+2026-04-09 18:37:07,279 - INFO - QUESTION: which team does the San Francisco Giants have the worst home record against from 2020-2025
+2026-04-09 18:37:07,280 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-09 18:37:07,532 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1877
+2026-04-09 18:37:07,533 - INFO - Query successful: 29 rows (source=example)
+2026-04-09 18:37:07,536 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 1
+  Successful     : 1 (100.0%)
+  Failed         : 0
+
+  Total Rows     : 29
+  Avg Query Time : 0.246s
+  Total Time     : 0.26s
+
+==========================================
+
+2026-04-09 18:37:07,540 - INFO - Results exported to query_results\results_20260409_183707.json
+2026-04-09 18:37:07,541 - INFO - Results exported to query_results\results_20260409_183707.csv
+2026-04-09 18:37:07,543 - INFO - Results exported to query_results\results_20260409_183707.md

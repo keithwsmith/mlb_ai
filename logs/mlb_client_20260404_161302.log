@@ -1,0 +1,43 @@
+2026-04-04 16:13:02,904 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-04 16:13:02,909 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:13:02,912 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-04 16:13:02,913 - INFO - Health check: OK
+2026-04-04 16:13:02,915 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:13:02,923 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 143
+2026-04-04 16:13:02,923 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-04 16:13:02,925 - INFO - Loaded 4 questions from questions.json (list format)
+2026-04-04 16:13:02,926 - INFO - Starting batch processing: 4 questions
+2026-04-04 16:13:02,926 - INFO - QUESTION: roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024
+2026-04-04 16:13:02,928 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:13:03,234 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1110
+2026-04-04 16:13:03,235 - INFO - Query successful: 17 rows (source=example)
+2026-04-04 16:13:03,239 - INFO - QUESTION: roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025
+2026-04-04 16:13:03,240 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:17:21,047 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1028
+2026-04-04 16:17:21,048 - INFO - Query successful: 13 rows (source=llm)
+2026-04-04 16:17:21,054 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026
+2026-04-04 16:17:21,057 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:18:51,375 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 955
+2026-04-04 16:18:51,376 - INFO - Query successful: 6 rows (source=llm)
+2026-04-04 16:18:51,383 - INFO - QUESTION: player, position, signing bonus for the TOP 3 signing bonus for each round in 2025 draft
+2026-04-04 16:18:51,386 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:18:51,813 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3747
+2026-04-04 16:18:51,814 - INFO - Query successful: 75 rows (source=example)
+2026-04-04 16:18:51,816 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 4
+  Successful     : 4 (100.0%)
+  Failed         : 0
+
+  Total Rows     : 111
+  Avg Query Time : 87.199s
+  Total Time     : 348.89s
+
+==========================================
+
+2026-04-04 16:18:51,820 - INFO - Results exported to query_results\results_20260404_161851.json
+2026-04-04 16:18:51,822 - INFO - Results exported to query_results\results_20260404_161851.csv
+2026-04-04 16:18:51,824 - INFO - Results exported to query_results\results_20260404_161851.md

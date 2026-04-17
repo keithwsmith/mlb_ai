@@ -1,0 +1,50 @@
+2026-04-04 16:27:15,580 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-04 16:27:15,585 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:27:15,607 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-04 16:27:15,608 - INFO - Health check: OK
+2026-04-04 16:27:15,613 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:27:15,638 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 143
+2026-04-04 16:27:15,639 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-04 16:27:15,645 - INFO - Loaded 5 questions from questions.json (list format)
+2026-04-04 16:27:15,646 - INFO - Starting batch processing: 5 questions
+2026-04-04 16:27:15,646 - INFO - QUESTION: roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024
+2026-04-04 16:27:15,648 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:27:15,975 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1111
+2026-04-04 16:27:15,975 - INFO - Query successful: 17 rows (source=example)
+2026-04-04 16:27:15,979 - INFO - QUESTION: roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025
+2026-04-04 16:27:15,981 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:27:16,287 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1026
+2026-04-04 16:27:16,288 - INFO - Query successful: 13 rows (source=example)
+2026-04-04 16:27:16,292 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026
+2026-04-04 16:27:16,296 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:27:16,598 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 955
+2026-04-04 16:27:16,599 - INFO - Query successful: 6 rows (source=example)
+2026-04-04 16:27:16,635 - INFO - QUESTION: player, position, signing bonus for the TOP 3 signing bonus for each round in 2025 draft
+2026-04-04 16:27:16,638 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:27:17,664 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3749
+2026-04-04 16:27:17,665 - INFO - Query successful: 75 rows (source=example)
+2026-04-04 16:27:17,720 - INFO - QUESTION: pitcher, pitch type sping rate of all San Francisco Giants pitchers on a 3-2 count in 2025
+2026-04-04 16:27:17,729 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:30:51,304 - ERROR - Connection error
+2026-04-04 16:30:51,309 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 5
+  Successful     : 4 (80.0%)
+  Failed         : 1
+
+  Total Rows     : 111
+  Avg Query Time : 0.383s
+  Total Time     : 215.66s
+
+==========================================
+
+  FAILED QUERIES:
+    - pitcher, pitch type sping rate of all San Francisco Giants pitchers on a 3-2 cou
+      Error: Could not connect to server at http://127.0.0.1:8000
+
+2026-04-04 16:30:51,315 - INFO - Results exported to query_results\results_20260404_163051.json
+2026-04-04 16:30:51,318 - INFO - Results exported to query_results\results_20260404_163051.csv
+2026-04-04 16:30:51,320 - INFO - Results exported to query_results\results_20260404_163051.md

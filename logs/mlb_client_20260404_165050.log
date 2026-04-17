@@ -1,0 +1,44 @@
+2026-04-04 16:50:50,305 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-04 16:50:50,311 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:50:50,318 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-04 16:50:50,320 - INFO - Health check: OK
+2026-04-04 16:50:50,323 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:50:50,327 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 143
+2026-04-04 16:50:50,328 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-04 16:50:50,339 - INFO - Loaded 3 questions from questions.json (list format)
+2026-04-04 16:50:50,341 - INFO - Starting batch processing: 3 questions
+2026-04-04 16:50:50,341 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2020-2026
+2026-04-04 16:50:50,343 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:52:33,193 - ERROR - Connection error
+2026-04-04 16:52:33,198 - INFO - QUESTION: player, position, team,signing bonus for the TOP 10 signing bonus for each round in 2025 draft
+2026-04-04 16:52:33,201 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:52:35,242 - ERROR - Connection error
+2026-04-04 16:52:35,243 - INFO - QUESTION: record, opponent of team the San Francisco Giants have the best record against since 1960
+2026-04-04 16:52:35,263 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-04 16:52:37,313 - ERROR - Connection error
+2026-04-04 16:52:37,465 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 3
+  Successful     : 0 (0.0%)
+  Failed         : 3
+
+  Total Rows     : 0
+  Avg Query Time : 0.000s
+  Total Time     : 107.12s
+
+==========================================
+
+  FAILED QUERIES:
+    - players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants 
+      Error: Could not connect to server at http://127.0.0.1:8000
+    - player, position, team,signing bonus for the TOP 10 signing bonus for each round
+      Error: Could not connect to server at http://127.0.0.1:8000
+    - record, opponent of team the San Francisco Giants have the best record against s
+      Error: Could not connect to server at http://127.0.0.1:8000
+
+2026-04-04 16:52:37,641 - INFO - Results exported to query_results\results_20260404_165237.json
+2026-04-04 16:52:37,661 - INFO - Results exported to query_results\results_20260404_165237.csv
+2026-04-04 16:52:37,665 - INFO - Results exported to query_results\results_20260404_165237.md

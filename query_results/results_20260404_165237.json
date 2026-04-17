@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-04-04T16:52:37.467466",
+  "total_queries": 3,
+  "successful": 0,
+  "failed": 3,
+  "success_rate": 0.0,
+  "total_time": 107.12358093261719,
+  "results": [
+    {
+      "question": "players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2020-2026",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 0,
+      "error": "Could not connect to server at http://127.0.0.1:8000",
+      "success": false,
+      "row_count": 0
+    },
+    {
+      "question": "player, position, team,signing bonus for the TOP 10 signing bonus for each round in 2025 draft",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 0,
+      "error": "Could not connect to server at http://127.0.0.1:8000",
+      "success": false,
+      "row_count": 0
+    },
+    {
+      "question": "record, opponent of team the San Francisco Giants have the best record against since 1960",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 0,
+      "error": "Could not connect to server at http://127.0.0.1:8000",
+      "success": false,
+      "row_count": 0
+    }
+  ]
+}

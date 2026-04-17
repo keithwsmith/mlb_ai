@@ -1,0 +1,53 @@
+2026-04-10 15:39:17,010 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-10 15:39:17,026 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 15:39:17,032 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-10 15:39:17,036 - INFO - Health check: OK
+2026-04-10 15:39:17,058 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 15:39:17,070 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 144
+2026-04-10 15:39:17,071 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-10 15:39:17,100 - INFO - Loaded 5 questions from questions.json (list format)
+2026-04-10 15:39:17,119 - INFO - Starting batch processing: 5 questions
+2026-04-10 15:39:17,122 - INFO - QUESTION: junior college draft picks drafted in 2025
+2026-04-10 15:39:17,124 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 15:39:17,286 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2276
+2026-04-10 15:39:17,287 - INFO - Query successful: 70 rows (source=example)
+2026-04-10 15:39:17,326 - INFO - QUESTION: game_pk, home team name, away team name for all games on Opening Day in 2024
+2026-04-10 15:39:17,329 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 15:49:17,342 - ERROR - Request timeout
+2026-04-10 15:49:17,482 - INFO - QUESTION: pitcher, pitcher hand, batter side, pitch type, for hits
+2026-04-10 15:49:17,486 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 15:59:17,495 - ERROR - Request timeout
+2026-04-10 15:59:17,498 - INFO - QUESTION: top 10 hitters by exit velocity in 2023-2025
+2026-04-10 15:59:17,499 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 16:00:59,006 - ERROR - Connection error
+2026-04-10 16:00:59,019 - INFO - QUESTION: hitter season stats for all San Francisco Giants in 2025
+2026-04-10 16:00:59,032 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 16:01:01,093 - ERROR - Connection error
+2026-04-10 16:01:01,110 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 5
+  Successful     : 1 (20.0%)
+  Failed         : 4
+
+  Total Rows     : 70
+  Avg Query Time : 240.027s
+  Total Time     : 1303.99s
+
+==========================================
+
+  FAILED QUERIES:
+    - game_pk, home team name, away team name for all games on Opening Day in 2024
+      Error: Request timeout after 600s
+    - pitcher, pitcher hand, batter side, pitch type, for hits
+      Error: Request timeout after 600s
+    - top 10 hitters by exit velocity in 2023-2025
+      Error: Could not connect to server at http://127.0.0.1:8000
+    - hitter season stats for all San Francisco Giants in 2025
+      Error: Could not connect to server at http://127.0.0.1:8000
+
+2026-04-10 16:01:01,157 - INFO - Results exported to query_results\results_20260410_160101.json
+2026-04-10 16:01:01,159 - INFO - Results exported to query_results\results_20260410_160101.csv
+2026-04-10 16:01:01,161 - INFO - Results exported to query_results\results_20260410_160101.md

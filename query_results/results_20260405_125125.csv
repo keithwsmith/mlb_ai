@@ -1,0 +1,4 @@
+Question,Success,Row Count,Source,LLM Time (s),DB Time (s),Total Time (s),Error
+"players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2020-2021",Yes,3,example,0.261,0.06,0.321,
+"player, position, team,signing bonus for the TOP 10 signing bonus for each round in 2025 draft",Yes,75,example,0.175,0.199,0.374,
+"record, team the San Francisco Giants have the best home record against since 1960",No,0,error,0,0,0,Could not connect to server at http://127.0.0.1:8000

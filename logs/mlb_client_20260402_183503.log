@@ -1,0 +1,42 @@
+2026-04-02 18:35:03,692 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-02 18:35:03,699 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:35:03,705 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-02 18:35:03,711 - INFO - Health check: OK
+2026-04-02 18:35:03,727 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:35:03,738 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 132
+2026-04-02 18:35:03,740 - INFO - Model: sqlcoder:15b
+2026-04-02 18:35:03,770 - INFO - Loaded 3 questions from questions.json (list format)
+2026-04-02 18:35:03,779 - INFO - Starting batch processing: 3 questions
+2026-04-02 18:35:03,781 - INFO - QUESTION: roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024
+2026-04-02 18:35:03,797 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:35:04,285 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1742
+2026-04-02 18:35:04,286 - INFO - Query successful: 36 rows (source=example)
+2026-04-02 18:35:04,321 - INFO - QUESTION: roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025
+2026-04-02 18:35:04,325 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:45:04,337 - ERROR - Request timeout
+2026-04-02 18:45:04,342 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026
+2026-04-02 18:45:04,345 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:47:47,202 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1431
+2026-04-02 18:47:47,203 - INFO - Query successful: 12 rows (source=llm)
+2026-04-02 18:47:47,217 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 3
+  Successful     : 2 (66.7%)
+  Failed         : 1
+
+  Total Rows     : 48
+  Avg Query Time : 254.437s
+  Total Time     : 763.44s
+
+==========================================
+
+  FAILED QUERIES:
+    - roster changes between 2025 and 2026 for the New York Mets players on 2026 but n
+      Error: Request timeout after 600s
+
+2026-04-02 18:47:47,221 - INFO - Results exported to query_results\results_20260402_184747.json
+2026-04-02 18:47:47,223 - INFO - Results exported to query_results\results_20260402_184747.csv
+2026-04-02 18:47:47,236 - INFO - Results exported to query_results\results_20260402_184747.md

@@ -1,0 +1,42 @@
+2026-04-05 12:45:50,984 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-05 12:45:51,013 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 12:45:51,019 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-05 12:45:51,019 - INFO - Health check: OK
+2026-04-05 12:45:51,022 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 12:45:51,028 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 144
+2026-04-05 12:45:51,033 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-05 12:45:51,034 - INFO - Loaded 3 questions from questions.json (list format)
+2026-04-05 12:45:51,035 - INFO - Starting batch processing: 3 questions
+2026-04-05 12:45:51,036 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2020-2021
+2026-04-05 12:45:51,037 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 12:45:51,364 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 731
+2026-04-05 12:45:51,365 - INFO - Query successful: 3 rows (source=example)
+2026-04-05 12:45:51,368 - INFO - QUESTION: player, position, team,signing bonus for the TOP 10 signing bonus for each round in 2025 draft
+2026-04-05 12:45:51,370 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 12:45:51,769 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3749
+2026-04-05 12:45:51,770 - INFO - Query successful: 75 rows (source=example)
+2026-04-05 12:45:51,773 - INFO - QUESTION: record, team the San Francisco Giants have the best home record against since 1960
+2026-04-05 12:45:51,776 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 12:51:25,597 - ERROR - Connection error
+2026-04-05 12:51:25,605 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 3
+  Successful     : 2 (66.7%)
+  Failed         : 1
+
+  Total Rows     : 78
+  Avg Query Time : 0.232s
+  Total Time     : 334.57s
+
+==========================================
+
+  FAILED QUERIES:
+    - record, team the San Francisco Giants have the best home record against since 19
+      Error: Could not connect to server at http://127.0.0.1:8000
+
+2026-04-05 12:51:25,610 - INFO - Results exported to query_results\results_20260405_125125.json
+2026-04-05 12:51:25,613 - INFO - Results exported to query_results\results_20260405_125125.csv
+2026-04-05 12:51:25,615 - INFO - Results exported to query_results\results_20260405_125125.md

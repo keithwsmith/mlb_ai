@@ -1,0 +1,197 @@
+{
+  "timestamp": "2026-04-09T18:37:07.538366",
+  "total_queries": 1,
+  "successful": 1,
+  "failed": 0,
+  "success_rate": 100.0,
+  "total_time": 0.2580735683441162,
+  "results": [
+    {
+      "question": "which team does the San Francisco Giants have the worst home record against from 2020-2025",
+      "sql": "SELECT opponent,SUM(wins) AS wins,SUM(losses) AS losses,CAST(SUM(wins) AS float) / NULLIF(SUM(wins) + SUM(losses), 0) AS win_pct FROM (SELECT t_away.name AS opponent,CASE WHEN g.teams__home__is_winner = 1 THEN 1 ELSE 0 END AS wins,CASE WHEN g.teams__home__is_winner = 0 AND g.is_tie = 0 THEN 1 ELSE 0 END AS losses FROM dw.games g JOIN dw.teams t_home ON g.teams__home__team__id = t_home.id JOIN dw.teams t_away ON g.teams__away__team__id = t_away.id WHERE g.season BETWEEN '2020' AND '2025' AND g.series_description = 'Regular Season' AND g.status__detailed_state = 'Final' AND t_home.name = 'San Francisco Giants') r GROUP BY opponent ORDER BY win_pct DESC;",
+      "rows": [
+        [
+          "Colorado Rockies",
+          35,
+          8,
+          0.813953488372093
+        ],
+        [
+          "Philadelphia Phillies",
+          12,
+          3,
+          0.8
+        ],
+        [
+          "Seattle Mariners",
+          6,
+          2,
+          0.75
+        ],
+        [
+          "Chicago Cubs",
+          13,
+          5,
+          0.7222222222222222
+        ],
+        [
+          "Arizona Diamondbacks",
+          32,
+          14,
+          0.6956521739130435
+        ],
+        [
+          "Houston Astros",
+          4,
+          2,
+          0.6666666666666666
+        ],
+        [
+          "Boston Red Sox",
+          4,
+          2,
+          0.6666666666666666
+        ],
+        [
+          "Minnesota Twins",
+          2,
+          1,
+          0.6666666666666666
+        ],
+        [
+          "Texas Rangers",
+          7,
+          4,
+          0.6363636363636364
+        ],
+        [
+          "Detroit Tigers",
+          3,
+          2,
+          0.6
+        ],
+        [
+          "Athletics",
+          9,
+          6,
+          0.6
+        ],
+        [
+          "Los Angeles Angels",
+          4,
+          3,
+          0.5714285714285714
+        ],
+        [
+          "Atlanta Braves",
+          9,
+          7,
+          0.5625
+        ],
+        [
+          "Milwaukee Brewers",
+          10,
+          8,
+          0.5555555555555556
+        ],
+        [
+          "Cincinnati Reds",
+          8,
+          7,
+          0.5333333333333333
+        ],
+        [
+          "Cleveland Guardians",
+          3,
+          3,
+          0.5
+        ],
+        [
+          "Baltimore Orioles",
+          3,
+          3,
+          0.5
+        ],
+        [
+          "Miami Marlins",
+          8,
+          8,
+          0.5
+        ],
+        [
+          "New York Mets",
+          8,
+          8,
+          0.5
+        ],
+        [
+          "St. Louis Cardinals",
+          8,
+          9,
+          0.47058823529411764
+        ],
+        [
+          "Pittsburgh Pirates",
+          7,
+          8,
+          0.4666666666666667
+        ],
+        [
+          "Washington Nationals",
+          7,
+          8,
+          0.4666666666666667
+        ],
+        [
+          "Kansas City Royals",
+          4,
+          5,
+          0.4444444444444444
+        ],
+        [
+          "San Diego Padres",
+          18,
+          27,
+          0.4
+        ],
+        [
+          "Los Angeles Dodgers",
+          15,
+          25,
+          0.375
+        ],
+        [
+          "Chicago White Sox",
+          2,
+          4,
+          0.3333333333333333
+        ],
+        [
+          "Tampa Bay Rays",
+          2,
+          4,
+          0.3333333333333333
+        ],
+        [
+          "Toronto Blue Jays",
+          1,
+          2,
+          0.3333333333333333
+        ],
+        [
+          "New York Yankees",
+          0,
+          3,
+          0.0
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.031,
+      "time_db": 0.214,
+      "time_total": 0.246,
+      "error": null,
+      "success": true,
+      "row_count": 29
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Question,Success,Row Count,Source,LLM Time (s),DB Time (s),Total Time (s),Error
+roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024,Yes,17,example,0.196,0.09,0.286,
+roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025,Yes,13,llm,257.599,0.157,257.779,
+"players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026",Yes,6,llm,90.208,0.088,90.312,
+"player, position, signing bonus for the TOP 3 signing bonus for each round in 2025 draft",Yes,75,example,0.16,0.259,0.42,

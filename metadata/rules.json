@@ -1,0 +1,23 @@
+{
+  "rules": [
+    "When asked for game detail columns like game_pk, winner, game_date — do NOT use COUNT(*) or GROUP BY. Return one row per game.",
+    "When asked 'how many games' AND detail columns — return the detail rows. The count is implied by the number of rows.",
+    "NEVER join dw.teams with both home and away conditions on the same alias. Always use two separate joins: t_home and t_away.",
+    "To filter for games between two specific teams, use: WHERE ((t_home.name = 'Team A' AND t_away.name = 'Team B') OR (t_home.name = 'Team B' AND t_away.name = 'Team A'))",
+    "To determine winner using scores: CASE WHEN g.teams__home__score > g.teams__away__score THEN t_home.name ELSE t_away.name END AS winner",
+    "To determine winner using is_winner flag: CASE WHEN g.teams__home__is_winner = 1 THEN t_home.name ELSE t_away.name END AS winner",
+    "For NL West division games both teams must have: t_home.division__name = 'National League West' AND t_away.division__name = 'National League West'",
+    "For games involving at least one NL team use: (t_home.league__name = 'National League' OR t_away.league__name = 'National League')",
+    "Always filter completed games with: g.status__detailed_state = 'Final'",
+    "For regular season only add: g.series_description = 'Regular Season'",
+	"Check the table for season or years when question has a year or year range"
+  ],
+  "common_mistakes": [
+    "Using COUNT(*) with GROUP BY when the question asks for per-game detail rows",
+    "Joining dw.teams once with AND on both home and away team IDs — this returns zero rows",
+    "Missing the team name filter when the question specifies two teams",
+    "Using a specific date like '2025-06-30' when the question asks about a full year",
+    "Using OR instead of AND when filtering for division games — both teams must be in the same division",
+    "Joining on __link columns instead of __id columns"
+  ]
+}

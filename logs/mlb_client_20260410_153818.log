@@ -1,0 +1,3 @@
+2026-04-10 15:38:18,765 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-10 15:38:18,780 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 15:38:20,803 - ERROR - Health check failed: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))

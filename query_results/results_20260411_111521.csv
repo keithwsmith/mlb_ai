@@ -1,0 +1,6 @@
+Question,Success,Row Count,Source,LLM Time (s),DB Time (s),Total Time (s),Error
+junior college draft picks drafted in 2025,Yes,70,example,0.021,0.325,0.346,
+"game_pk, home team name, away team name for all games on Opening Day in 2024",No,0,error,0,0,600,Request timeout after 600s
+"pitcher, pitcher hand, batter side, pitch type, for hits",No,0,error,0,0,600,Request timeout after 600s
+top 10 hitters by exit velocity in 2023-2025,No,0,error,0,0,600,Request timeout after 600s
+hitter season stats for all San Francisco Giants in 2025,No,0,error,0,0,600,Request timeout after 600s

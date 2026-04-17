@@ -1,0 +1,39 @@
+2026-04-03 15:25:26,207 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-03 15:25:26,222 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:25:26,226 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-03 15:25:26,233 - INFO - Health check: OK
+2026-04-03 15:25:26,248 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:25:26,256 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 143
+2026-04-03 15:25:26,257 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-03 15:25:26,284 - INFO - Loaded 3 questions from questions.json (list format)
+2026-04-03 15:25:26,302 - INFO - Starting batch processing: 3 questions
+2026-04-03 15:25:26,331 - INFO - QUESTION: roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024
+2026-04-03 15:25:26,342 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:25:26,834 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1111
+2026-04-03 15:25:26,835 - INFO - Query successful: 17 rows (source=example)
+2026-04-03 15:25:26,846 - INFO - QUESTION: roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025
+2026-04-03 15:25:26,850 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:25:27,281 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1028
+2026-04-03 15:25:27,282 - INFO - Query successful: 13 rows (source=example)
+2026-04-03 15:25:27,296 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026
+2026-04-03 15:25:27,297 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:25:27,608 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 991
+2026-04-03 15:25:27,610 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 15:25:27,625 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 3
+  Successful     : 3 (100.0%)
+  Failed         : 0
+
+  Total Rows     : 36
+  Avg Query Time : 0.392s
+  Total Time     : 1.31s
+
+==========================================
+
+2026-04-03 15:25:27,635 - INFO - Results exported to query_results\results_20260403_152527.json
+2026-04-03 15:25:27,638 - INFO - Results exported to query_results\results_20260403_152527.csv
+2026-04-03 15:25:27,668 - INFO - Results exported to query_results\results_20260403_152527.md

@@ -1,0 +1,351 @@
+{
+  "timestamp": "2026-04-11T10:15:07.607699",
+  "total_queries": 5,
+  "successful": 1,
+  "failed": 4,
+  "success_rate": 20.0,
+  "total_time": 6.111413478851318,
+  "results": [
+    {
+      "question": "junior college draft picks drafted in 2025",
+      "sql": "SELECT TOP (100)  d.person__full_name, d.person__primary_position__name\nFROM dw.draft d\nWHERE d.year = 2025\nAND d.home__state IN ('CA', 'California')\nORDER BY d.pick_number",
+      "rows": [
+        [
+          "Tyler Bremner",
+          "Pitcher"
+        ],
+        [
+          "Seth Hernandez",
+          "Pitcher"
+        ],
+        [
+          "Billy Carlson",
+          "Shortstop"
+        ],
+        [
+          "Gavin Fien",
+          "Shortstop"
+        ],
+        [
+          "Brady Ebel",
+          "Shortstop"
+        ],
+        [
+          "Angel Cervantes",
+          "Pitcher"
+        ],
+        [
+          "Cooper Flemming",
+          "Shortstop"
+        ],
+        [
+          "Quentin Young",
+          "Shortstop"
+        ],
+        [
+          "Dean Curley",
+          "Shortstop"
+        ],
+        [
+          "Murf Gray",
+          "Third Base"
+        ],
+        [
+          "Ethan Hedges",
+          "Third Base"
+        ],
+        [
+          "Anthony Eyanson",
+          "Pitcher"
+        ],
+        [
+          "Jack Gurevitch",
+          "First Base"
+        ],
+        [
+          "Cameron Millar",
+          "Pitcher"
+        ],
+        [
+          "Ben Jacobs",
+          "Pitcher"
+        ],
+        [
+          "Landon Hodge",
+          "Catcher"
+        ],
+        [
+          "Riley Kelly",
+          "Pitcher"
+        ],
+        [
+          "Jason Reitz",
+          "Pitcher"
+        ],
+        [
+          "Kaleb Wing",
+          "Pitcher"
+        ],
+        [
+          "Colin Yeaman",
+          "Shortstop"
+        ],
+        [
+          "Sean Youngerman",
+          "Pitcher"
+        ],
+        [
+          "Aiden Jimenez",
+          "Pitcher"
+        ],
+        [
+          "Jack Anker",
+          "Pitcher"
+        ],
+        [
+          "Josiah Hartshorn",
+          "Outfield"
+        ],
+        [
+          "Lucas Kelly",
+          "Pitcher"
+        ],
+        [
+          "Caden Hunter",
+          "Pitcher"
+        ],
+        [
+          "Myles Patton",
+          "Pitcher"
+        ],
+        [
+          "Jacob McCombs",
+          "Outfield"
+        ],
+        [
+          "Aidan Cremarosa",
+          "Pitcher"
+        ],
+        [
+          "Nick Dumesnil",
+          "Outfield"
+        ],
+        [
+          "Anthony Martinez",
+          "First Base"
+        ],
+        [
+          "Kien Vu",
+          "Outfield"
+        ],
+        [
+          "Trevor Heishman",
+          "Pitcher"
+        ],
+        [
+          "Austin Smith",
+          "Outfield"
+        ],
+        [
+          "Zach Daudet",
+          "Shortstop"
+        ],
+        [
+          "Max Martin",
+          "Pitcher"
+        ],
+        [
+          "Justin DeCriscio",
+          "Shortstop"
+        ],
+        [
+          "Harrison Bodendorf",
+          "Pitcher"
+        ],
+        [
+          "Junior Barajas",
+          "Catcher"
+        ],
+        [
+          "CJ Hughes",
+          "Shortstop"
+        ],
+        [
+          "Cody Delvecchio",
+          "Pitcher"
+        ],
+        [
+          "Truman Pauley",
+          "Pitcher"
+        ],
+        [
+          "Izeah Muniz",
+          "Pitcher"
+        ],
+        [
+          "Aiden Taurek",
+          "Outfield"
+        ],
+        [
+          "Gavin Lauridsen",
+          "Pitcher"
+        ],
+        [
+          "Frank Camarillo",
+          "Pitcher"
+        ],
+        [
+          "Max Banks",
+          "Pitcher"
+        ],
+        [
+          "Trey Seeley",
+          "Pitcher"
+        ],
+        [
+          "Alex Wallace",
+          "Pitcher"
+        ],
+        [
+          "Reed Moring",
+          "Pitcher"
+        ],
+        [
+          "Trevor Haskins",
+          "Shortstop"
+        ],
+        [
+          "Dominic Cadiz",
+          "Third Base"
+        ],
+        [
+          "Chase Call",
+          "Outfield"
+        ],
+        [
+          "Nico Wagner",
+          "Pitcher"
+        ],
+        [
+          "Xavier Cardenas III",
+          "Pitcher"
+        ],
+        [
+          "JP Smith II",
+          "Third Base"
+        ],
+        [
+          "Braeden Sloan",
+          "Pitcher"
+        ],
+        [
+          "Matthew Dalquist",
+          "Pitcher"
+        ],
+        [
+          "Grayson Boles",
+          "Pitcher"
+        ],
+        [
+          "Luke Kovach",
+          "Pitcher"
+        ],
+        [
+          "Chase Bentley",
+          "Pitcher"
+        ],
+        [
+          "Dylan Wood",
+          "Pitcher"
+        ],
+        [
+          "Anson Aroz",
+          "Catcher"
+        ],
+        [
+          "Sam Tookoian",
+          "Pitcher"
+        ],
+        [
+          "Kade Brown",
+          "Pitcher"
+        ],
+        [
+          "Elijah McNeal",
+          "Shortstop"
+        ],
+        [
+          "Freddy Rodriguez",
+          "Pitcher"
+        ],
+        [
+          "Ethin Bingaman",
+          "Pitcher"
+        ],
+        [
+          "Vaughn Neckar",
+          "Pitcher"
+        ],
+        [
+          "Bryce Martin-Grudzielanek",
+          "Shortstop"
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.03,
+      "time_db": 0.404,
+      "time_total": 0.434,
+      "error": null,
+      "success": true,
+      "row_count": 70
+    },
+    {
+      "question": "game_pk, home team name, away team name for all games on Opening Day in 2024",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 1.4135825634002686,
+      "error": "['llama runner process has terminated: %!w(<nil>) (status code: 500)', 'llama runner process has terminated: %!w(<nil>) (status code: 500)', 'llama runner process has terminated: %!w(<nil>) (status code: 500)']",
+      "success": false,
+      "row_count": 0
+    },
+    {
+      "question": "pitcher, pitcher hand, batter side, pitch type, for hits",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 1.373002529144287,
+      "error": "['llama runner process has terminated: %!w(<nil>) (status code: 500)', 'llama runner process has terminated: %!w(<nil>) (status code: 500)', 'llama runner process has terminated: %!w(<nil>) (status code: 500)']",
+      "success": false,
+      "row_count": 0
+    },
+    {
+      "question": "top 10 hitters by exit velocity in 2023-2025",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 1.3979954719543457,
+      "error": "['llama runner process has terminated: %!w(<nil>) (status code: 500)', 'llama runner process has terminated: %!w(<nil>) (status code: 500)', 'llama runner process has terminated: %!w(<nil>) (status code: 500)']",
+      "success": false,
+      "row_count": 0
+    },
+    {
+      "question": "hitter season stats for all San Francisco Giants in 2025",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 1.3760006427764893,
+      "error": "['llama runner process has terminated: %!w(<nil>) (status code: 500)', 'llama runner process has terminated: %!w(<nil>) (status code: 500)', 'llama runner process has terminated: %!w(<nil>) (status code: 500)']",
+      "success": false,
+      "row_count": 0
+    }
+  ]
+}

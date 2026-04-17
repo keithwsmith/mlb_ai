@@ -1,0 +1,4 @@
+Question,Success,Row Count,Source,LLM Time (s),DB Time (s),Total Time (s),Error
+roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024,Yes,36,example,0.14,0.108,0.249,
+roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025,No,0,error,0,0,0.23133254051208496,"[""model 'sqlcoder:15b' not found (status code: 404)"", ""model 'sqlcoder:15b' not found (status code: 404)"", ""model 'sqlcoder:15b' not found (status code: 404)""]"
+"players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026",No,0,error,0,0,0.19821572303771973,"[""model 'sqlcoder:15b' not found (status code: 404)"", ""model 'sqlcoder:15b' not found (status code: 404)"", ""model 'sqlcoder:15b' not found (status code: 404)""]"

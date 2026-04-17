@@ -1,0 +1,45 @@
+2026-04-02 18:20:55,238 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-02 18:20:55,249 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:20:55,275 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-02 18:20:55,275 - INFO - Health check: OK
+2026-04-02 18:20:55,303 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:20:55,308 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 132
+2026-04-02 18:20:55,309 - INFO - Model: sqlcoder:15b
+2026-04-02 18:20:55,327 - INFO - Loaded 3 questions from questions.json (list format)
+2026-04-02 18:20:55,348 - INFO - Starting batch processing: 3 questions
+2026-04-02 18:20:55,351 - INFO - QUESTION: roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024
+2026-04-02 18:20:55,353 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:20:55,827 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1744
+2026-04-02 18:20:55,827 - INFO - Query successful: 36 rows (source=example)
+2026-04-02 18:20:55,842 - INFO - QUESTION: roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025
+2026-04-02 18:20:55,845 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:20:56,974 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 313
+2026-04-02 18:20:56,975 - ERROR - Query error: ['model requires more system memory (8.3 GiB) than is available (2.4 GiB) (status code: 500)', 'model requires more system memory (8.3 GiB) than is available (2.4 GiB) (status code: 500)', 'model requires more system memory (8.3 GiB) than is available (2.4 GiB) (status code: 500)']
+2026-04-02 18:20:56,991 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026
+2026-04-02 18:20:56,993 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:20:57,810 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 313
+2026-04-02 18:20:57,811 - ERROR - Query error: ['model requires more system memory (8.3 GiB) than is available (2.4 GiB) (status code: 500)', 'model requires more system memory (8.3 GiB) than is available (2.4 GiB) (status code: 500)', 'model requires more system memory (8.3 GiB) than is available (2.4 GiB) (status code: 500)']
+2026-04-02 18:20:57,823 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 3
+  Successful     : 1 (33.3%)
+  Failed         : 2
+
+  Total Rows     : 36
+  Avg Query Time : 0.802s
+  Total Time     : 2.47s
+
+==========================================
+
+  FAILED QUERIES:
+    - roster changes between 2025 and 2026 for the New York Mets players on 2026 but n
+      Error: ['model requires more system memory (8.3 GiB) than is available (2.4 GiB) (status code: 500)', 'model requires more syst
+    - players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants 
+      Error: ['model requires more system memory (8.3 GiB) than is available (2.4 GiB) (status code: 500)', 'model requires more syst
+
+2026-04-02 18:20:57,828 - INFO - Results exported to query_results\results_20260402_182057.json
+2026-04-02 18:20:57,829 - INFO - Results exported to query_results\results_20260402_182057.csv
+2026-04-02 18:20:57,831 - INFO - Results exported to query_results\results_20260402_182057.md

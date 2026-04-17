@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-04-05T14:45:16.130027",
+  "total_queries": 1,
+  "successful": 0,
+  "failed": 1,
+  "success_rate": 0.0,
+  "total_time": 600.0749933719635,
+  "results": [
+    {
+      "question": "record, team the San Francisco Giants have the best home record against since 1960",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 600,
+      "error": "Request timeout after 600s",
+      "success": false,
+      "row_count": 0
+    }
+  ]
+}

@@ -1,0 +1,871 @@
+{
+  "timestamp": "2026-04-11T16:23:15.696791",
+  "total_queries": 5,
+  "successful": 1,
+  "failed": 4,
+  "success_rate": 20.0,
+  "total_time": 102.40410566329956,
+  "results": [
+    {
+      "question": "junior college draft picks",
+      "sql": "SELECT TOP (100) d.year, d.person__full_name, d.pick_number, d.person__primary_position__name, d.school__name, d.home__state FROM dw.draft d JOIN dw.school_type_lookup sl ON sl.school_name = d.school__name WHERE sl.school_type = 'Junior College' ORDER BY d.pick_number;",
+      "rows": [
+        [
+          "2010",
+          "Bryce Harper",
+          1,
+          "First Base",
+          "CC of Southern Nevada",
+          null
+        ],
+        [
+          "1990",
+          "Alex Fernandez",
+          4,
+          "Pitcher",
+          "Miama Dade CC",
+          null
+        ],
+        [
+          "1978",
+          "Glen Franklin",
+          9,
+          "Unknown",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "2011",
+          "Cory Spangenberg",
+          10,
+          "Second Base",
+          "Indain River CC",
+          null
+        ],
+        [
+          "1997",
+          "Aaron Akin",
+          12,
+          "Pitcher",
+          "Cowley CC",
+          null
+        ],
+        [
+          "2001",
+          "Casey Kotchman",
+          13,
+          "First Base",
+          "Seminole Junior College",
+          null
+        ],
+        [
+          "2015",
+          "Phil Bickford",
+          18,
+          "Pitcher",
+          "CC of Southern Nevada",
+          null
+        ],
+        [
+          "1988",
+          "Johnny Ard",
+          20,
+          "Pitcher",
+          "Manatee Community College",
+          null
+        ],
+        [
+          "1988",
+          "David Proctor",
+          21,
+          "Pitcher",
+          "Allen CC",
+          null
+        ],
+        [
+          "1991",
+          "Jonathan Farrell",
+          24,
+          "Outfield",
+          "Florida Junior College",
+          null
+        ],
+        [
+          "2000",
+          "Blake Williams",
+          24,
+          "Pitcher",
+          "Southwest Texas Junior College",
+          null
+        ],
+        [
+          "1992",
+          "Eddie Pearson",
+          24,
+          "First Base",
+          "Bishop State CC",
+          null
+        ],
+        [
+          "2006",
+          "Bryan Morris",
+          26,
+          "Pitcher",
+          "Motlow State CC",
+          null
+        ],
+        [
+          "2000",
+          "Robert Stiehl",
+          27,
+          "Pitcher",
+          "El Camino CC",
+          null
+        ],
+        [
+          "2017",
+          "Nate Pearson",
+          28,
+          "Pitcher",
+          "JC of Central Florida",
+          null
+        ],
+        [
+          "2002",
+          "Derick Grigsby",
+          29,
+          "Pitcher",
+          "Northeast Texas CC",
+          null
+        ],
+        [
+          "2008",
+          "Lonnie Chisenhall",
+          29,
+          "Third Base",
+          "Pitt CC",
+          null
+        ],
+        [
+          "1988",
+          "Kelly Lifgren",
+          31,
+          "Pitcher",
+          "Glendale CC",
+          null
+        ],
+        [
+          "1997",
+          "Kyle Kane",
+          33,
+          "Pitcher",
+          "Saddleback CC",
+          null
+        ],
+        [
+          "2011",
+          "Brian Goodwin",
+          34,
+          "Outfielder",
+          "Miama Dade CC",
+          null
+        ],
+        [
+          "2002",
+          "Matthew Clanton",
+          38,
+          "Pitcher",
+          "Orange Coast CC",
+          null
+        ],
+        [
+          "1984",
+          "Jimmy Meadows",
+          40,
+          "Pitcher",
+          "Walters State CC",
+          null
+        ],
+        [
+          "1994",
+          "John Ambrose",
+          41,
+          "Pitcher",
+          "John A. Logan CC",
+          null
+        ],
+        [
+          "2004",
+          "Jeff Marquez",
+          41,
+          "Pitcher",
+          "Sacramento CC (CA)",
+          null
+        ],
+        [
+          "2011",
+          "Jeff Ames",
+          42,
+          "Pitcher",
+          "Lower Columbia CC",
+          null
+        ],
+        [
+          "1992",
+          "James Rosenbohm",
+          45,
+          "Pitcher",
+          "Hutchinson CC",
+          null
+        ],
+        [
+          "1984",
+          "Karl Allaire",
+          45,
+          "Shortstop",
+          "Community College of Rhode Island",
+          null
+        ],
+        [
+          "2013",
+          "Cody Reed",
+          46,
+          "Pitcher",
+          "Northwest Mississippi CC",
+          null
+        ],
+        [
+          "1973",
+          "Jim Nelson",
+          48,
+          "Pitcher",
+          "Manatee Community College",
+          null
+        ],
+        [
+          "1999",
+          "Terence Byron",
+          53,
+          "Pitcher",
+          "Indain River CC",
+          null
+        ],
+        [
+          "2005",
+          "Zach Simons",
+          55,
+          "Pitcher",
+          "Everett CC",
+          null
+        ],
+        [
+          "2010",
+          "LeVon Washington",
+          55,
+          "Outfielder",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "1997",
+          "Scott Linebrink",
+          56,
+          "Pitcher",
+          "Southwest Texas Junior College",
+          null
+        ],
+        [
+          "1989",
+          "Scott Lydy",
+          56,
+          "Outfielder",
+          "South Mountain CC",
+          null
+        ],
+        [
+          "2017",
+          "Reynaldo Rivera",
+          57,
+          "Outfielder",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "1996",
+          "Jeff Farnsworth",
+          57,
+          "Pitcher",
+          "Okaloosa-Walton Community College",
+          null
+        ],
+        [
+          "2000",
+          "Freddie Bynum Jr.",
+          60,
+          "Shortstop",
+          "Pitt CC",
+          null
+        ],
+        [
+          "1996",
+          "Randi Mallard",
+          60,
+          "Pitcher",
+          "Hillsborough CC",
+          null
+        ],
+        [
+          "2018",
+          "Josh Breaux",
+          61,
+          "Catcher",
+          "McLennan CC",
+          "TX"
+        ],
+        [
+          "1965",
+          "Edward Berube",
+          62,
+          "Unknown",
+          "Colby CC ",
+          null
+        ],
+        [
+          "1978",
+          "Michael Taylor",
+          62,
+          "Outfield",
+          "Columbia State CC",
+          null
+        ],
+        [
+          "1987",
+          "Kinnis Pledger",
+          63,
+          "Outfielder",
+          "Garland County Community College (AR)",
+          null
+        ],
+        [
+          "2020",
+          "Connor Phillips",
+          64,
+          "Pitcher",
+          "McLennan CC",
+          "Texas"
+        ],
+        [
+          "1974",
+          "Steve Viefhaus",
+          64,
+          "Infield",
+          "St. Louis CC-Meramec",
+          null
+        ],
+        [
+          "2013",
+          "Victor Caratini",
+          65,
+          "Catcher",
+          "Miama Dade CC",
+          null
+        ],
+        [
+          "1999",
+          "John Lackey",
+          68,
+          "Pitcher",
+          "Grayson CC",
+          null
+        ],
+        [
+          "2005",
+          "Donnie Veal",
+          68,
+          "Pitcher",
+          "Pima CC",
+          null
+        ],
+        [
+          "2004",
+          "Ray Liotta",
+          69,
+          "Pitcher",
+          "Gulf Coast CC",
+          null
+        ],
+        [
+          "2016",
+          "Matthias Dietz",
+          69,
+          "Pitcher",
+          "John A. Logan CC ",
+          null
+        ],
+        [
+          "1981",
+          "Nelson Santovenia",
+          69,
+          "Catcher",
+          "Miama Dade CC",
+          null
+        ],
+        [
+          "1992",
+          "Jon Nunnally",
+          70,
+          "Outfielder",
+          "Miama Dade CC",
+          null
+        ],
+        [
+          "1967",
+          "Lawrence Crossan",
+          71,
+          "Unknown",
+          "Clark CC",
+          null
+        ],
+        [
+          "1987",
+          "Jaime Navarro",
+          71,
+          "Pitcher",
+          "Miama Dade CC",
+          null
+        ],
+        [
+          "2003",
+          "Brian McFall",
+          72,
+          "Outfield",
+          "Chandler-Gilbert CC",
+          null
+        ],
+        [
+          "2006",
+          "Chase Fontaine",
+          72,
+          "Shortstop",
+          "Daytona Beach CC",
+          null
+        ],
+        [
+          "1987",
+          "Ray Lankford",
+          72,
+          "Outfielder",
+          "Modesto Junior College",
+          null
+        ],
+        [
+          "2017",
+          "Evan Steele",
+          73,
+          "Pitcher",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "1994",
+          "Aaron France",
+          74,
+          "Pitcher",
+          "Cypress CC",
+          null
+        ],
+        [
+          "2004",
+          "Joshua Wahpepah",
+          76,
+          "Pitcher",
+          "Cowley CC",
+          null
+        ],
+        [
+          "2000",
+          "Nook Logan",
+          78,
+          "Outfielder",
+          "Copiah-Lincoln CC",
+          null
+        ],
+        [
+          "1992",
+          "Trevor Humphry",
+          80,
+          "Pitcher",
+          "Westark Community College",
+          null
+        ],
+        [
+          "2009",
+          "Patrick Corbin",
+          80,
+          "Pitcher",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "1988",
+          "David Weathers",
+          82,
+          "Pitcher",
+          "Motlow State CC",
+          null
+        ],
+        [
+          "2002",
+          "Kyle Pawelczyk",
+          84,
+          "Pitcher",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "2009",
+          "Evan Chambers",
+          84,
+          "Outfield",
+          "Hillsborough CC",
+          null
+        ],
+        [
+          "1991",
+          "Jeffrey Hostetler",
+          87,
+          "Pitcher",
+          "Cleveland State CC",
+          null
+        ],
+        [
+          "1994",
+          "Alberto Castillo",
+          88,
+          "Catcher",
+          "Miama Dade CC",
+          null
+        ],
+        [
+          "2004",
+          "Cory Dunlap",
+          88,
+          "First Base",
+          "Contra Costa CC",
+          null
+        ],
+        [
+          "2017",
+          "Daniel Tillo",
+          90,
+          "Pitcher",
+          "Iowa Western CC",
+          null
+        ],
+        [
+          "2017",
+          "Tyler Ivey",
+          91,
+          "Pitcher",
+          "Grayson CC",
+          null
+        ],
+        [
+          "1977",
+          "Erwin Bryant",
+          91,
+          "Shortstop",
+          "Columbia State CC",
+          null
+        ],
+        [
+          "2010",
+          "Zach Cates",
+          91,
+          "Pitcher",
+          "Northeast Texas CC",
+          null
+        ],
+        [
+          "2004",
+          "Jordan Parraz",
+          94,
+          "Outfielder",
+          "CC of Southern Nevada",
+          null
+        ],
+        [
+          "2013",
+          "Keynan Middleton",
+          95,
+          "Pitcher",
+          "Lane CC",
+          null
+        ],
+        [
+          "2009",
+          "Keon Broxton",
+          95,
+          "Outfielder",
+          "Santa Fe CC (NM)",
+          null
+        ],
+        [
+          "2003",
+          "Matt Chico",
+          96,
+          "Pitcher",
+          "Palomar CC",
+          null
+        ],
+        [
+          "2008",
+          "Craig Kimbrel",
+          96,
+          "Pitcher",
+          "Wallace State CC",
+          null
+        ],
+        [
+          "1985",
+          "Wally Ritchie",
+          96,
+          "Pitcher",
+          "Glendale CC",
+          null
+        ],
+        [
+          "2009",
+          "Brett Wallach",
+          96,
+          "Pitcher",
+          "Orange Coast CC",
+          null
+        ],
+        [
+          "1990",
+          "Shayne Rea",
+          98,
+          "Pitcher",
+          "Hendry Ford CC",
+          null
+        ],
+        [
+          "2013",
+          "Stephen Tarpley",
+          98,
+          "Pitcher",
+          "Scottsdale CC",
+          null
+        ],
+        [
+          "1995",
+          "Brian Barfield",
+          99,
+          "Pitcher",
+          "DeKalb Junior College",
+          null
+        ],
+        [
+          "1988",
+          "Gregory Harvey",
+          101,
+          "Pitcher",
+          "Seminole Junior College",
+          null
+        ],
+        [
+          "1981",
+          "David Ledbetter",
+          102,
+          "Pitcher",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "2014",
+          "Michael Mader",
+          105,
+          "Pitcher",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "1998",
+          "Jeffrey Schultz",
+          105,
+          "Pitcher",
+          "Cypress CC",
+          null
+        ],
+        [
+          "2008",
+          "Ryan Chaffee",
+          105,
+          "Pitcher",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "2018",
+          "Blake Rivera",
+          106,
+          "Pitcher",
+          "Wallace State CC",
+          "FL"
+        ],
+        [
+          "1970",
+          "John Balaz",
+          106,
+          "Outfielder",
+          "San Diego Community College",
+          null
+        ],
+        [
+          "2002",
+          "Jonathan Felfoldi",
+          107,
+          "Pitcher",
+          "Glendale CC",
+          null
+        ],
+        [
+          "1987",
+          "Mike Miller",
+          108,
+          "Pitcher",
+          "St. Louis CC-Meramec",
+          null
+        ],
+        [
+          "2011",
+          "Jeff Soptic",
+          110,
+          "Pitcher",
+          "Johnson County CC",
+          null
+        ],
+        [
+          "1974",
+          "David Buckley",
+          111,
+          "Pitcher",
+          "Bellevue CC",
+          null
+        ],
+        [
+          "1987",
+          "Ben Webb",
+          112,
+          "Pitcher",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "1970",
+          "Jim Otten",
+          113,
+          "Pitcher",
+          "Mesa CC",
+          null
+        ],
+        [
+          "2010",
+          "Marcus Knecht",
+          113,
+          "Outfielder",
+          "Connors State Junior College",
+          null
+        ],
+        [
+          "2002",
+          "Aaron Coonrod",
+          115,
+          "Pitcher",
+          "John A. Logan CC",
+          null
+        ],
+        [
+          "2014",
+          "Eudor Garcia",
+          115,
+          "Third Base",
+          "El Paso CC",
+          null
+        ],
+        [
+          "2005",
+          "Mat Gamel",
+          115,
+          "Third Base",
+          "Chipola Junior College",
+          null
+        ],
+        [
+          "2010",
+          "Donn Roach",
+          115,
+          "Pitcher",
+          "CC of Southern Nevada",
+          null
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.028,
+      "time_db": 0.322,
+      "time_total": 0.35,
+      "error": null,
+      "success": true,
+      "row_count": 100
+    },
+    {
+      "question": "game_pk, home team name, away team name for all games on Opening Day in 2024",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 0,
+      "error": "Could not connect to server at http://127.0.0.1:8000",
+      "success": false,
+      "row_count": 0
+    },
+    {
+      "question": "pitcher, pitcher hand, batter side, pitch type, for hits",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 0,
+      "error": "Could not connect to server at http://127.0.0.1:8000",
+      "success": false,
+      "row_count": 0
+    },
+    {
+      "question": "top 10 hitters by exit velocity in 2023-2025",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 0,
+      "error": "Could not connect to server at http://127.0.0.1:8000",
+      "success": false,
+      "row_count": 0
+    },
+    {
+      "question": "hitter season stats for all San Francisco Giants in 2025",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 0,
+      "error": "Could not connect to server at http://127.0.0.1:8000",
+      "success": false,
+      "row_count": 0
+    }
+  ]
+}

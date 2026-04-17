@@ -1,0 +1,6 @@
+Question,Success,Row Count,Source,LLM Time (s),DB Time (s),Total Time (s),Error
+roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024,Yes,17,example,0.134,0.173,0.307,
+roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025,Yes,13,example,0.14,0.16,0.301,
+"players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026",Yes,6,example,0.2,0.097,0.297,
+"player, position, signing bonus for the TOP 3 signing bonus for each round in 2025 draft",Yes,75,example,0.872,0.137,1.009,
+"pitcher, pitch type sping rate of all San Francisco Giants pitchers on a 3-2 count in 2025",No,0,error,0,0,0,Could not connect to server at http://127.0.0.1:8000

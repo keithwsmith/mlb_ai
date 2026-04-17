@@ -1,0 +1,52 @@
+{
+  "joins": [
+    {
+      "from_table": "dw.games",
+      "from_column": "teams__home__team__id",
+      "to_table": "dw.teams",
+      "to_column": "id"
+    },
+    {
+      "from_table": "dw.games",
+      "from_column": "teams__away__team__id",
+      "to_table": "dw.teams",
+      "to_column": "id"
+    },
+    {
+      "from_table": "dw.player_stats",
+      "from_column": "team__id",
+      "to_table": "dw.teams",
+      "to_column": "id"
+    },
+	{
+      "from_table": "dw.player_stats",
+      "from_column": "player__id",
+      "to_table": "dw.mlbplayers",
+      "to_column": "id"
+    },
+	{
+      "from_table": "dw.award_recipients",
+      "from_column": "player_id",
+      "to_table": "dw.mlbplayers",
+      "to_column": "id"
+    },
+	{
+      "from_table": "dw.draft",
+      "from_column": "person__id",
+      "to_table": "dw.mlbplayers",
+      "to_column": "id"
+    },
+	{
+      "from_table": "dw.draft",
+      "from_column": "school__name",
+      "to_table": "dw.school_type_lookup",
+      "to_column": "school_name"
+    },
+	{
+      "from_table": "dw.rosters",
+      "from_column": "parent_team_id",
+      "to_table": "dw.teams",
+      "to_column": "id"
+    }
+  ]
+}

@@ -1,0 +1,1026 @@
+2026-04-03 17:18:19,242 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-03 17:18:19,247 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:19,265 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-03 17:18:19,265 - INFO - Health check: OK
+2026-04-03 17:18:19,267 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:19,295 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 143
+2026-04-03 17:18:19,295 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-03 17:18:19,302 - INFO - Loaded 565 examples from examples.json
+2026-04-03 17:18:19,303 - INFO - Starting test run: 565 examples
+2026-04-03 17:18:19,304 - INFO - QUESTION: name, position of draft picks whose home state is California or CA in 2025 draft
+2026-04-03 17:18:19,305 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:19,609 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2272
+2026-04-03 17:18:19,609 - INFO - Query successful: 70 rows (source=example)
+2026-04-03 17:18:19,612 - INFO - QUESTION: name and position of 2025 draft picks from California
+2026-04-03 17:18:19,614 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:19,829 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2272
+2026-04-03 17:18:19,830 - INFO - Query successful: 70 rows (source=example)
+2026-04-03 17:18:19,833 - INFO - QUESTION: TOP 20 Home States with most draft picks
+2026-04-03 17:18:19,834 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:20,050 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 580
+2026-04-03 17:18:20,051 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:20,058 - INFO - QUESTION: top home states with most draft picks
+2026-04-03 17:18:20,062 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:20,304 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 578
+2026-04-03 17:18:20,305 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:20,308 - INFO - QUESTION: Top 20 schools with the most draft picks
+2026-04-03 17:18:20,309 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:21,690 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 652
+2026-04-03 17:18:21,691 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:21,696 - INFO - QUESTION: players who were drafted out of High School
+2026-04-03 17:18:21,699 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:22,382 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 7326
+2026-04-03 17:18:22,383 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:18:22,388 - INFO - QUESTION: players drafted out of high school
+2026-04-03 17:18:22,391 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:23,235 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 7320
+2026-04-03 17:18:23,259 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:18:23,664 - INFO - QUESTION: high school draft picks
+2026-04-03 17:18:23,668 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:24,905 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 7334
+2026-04-03 17:18:24,913 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:18:24,917 - INFO - QUESTION: players drafted out of junior college
+2026-04-03 17:18:24,953 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:25,873 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6786
+2026-04-03 17:18:25,880 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:18:25,922 - INFO - QUESTION: junior college draft picks
+2026-04-03 17:18:25,925 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:28,069 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6788
+2026-04-03 17:18:28,069 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:18:28,072 - INFO - QUESTION: how many games did the San Francisco Giants play the Los Angeles Dodgers in 2025
+2026-04-03 17:18:28,074 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:28,396 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 513
+2026-04-03 17:18:28,396 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:28,400 - INFO - QUESTION: game_pk, winner, game date how many games did the San Francisco Giants play the Los Angeles Dodgers in 2025
+2026-04-03 17:18:28,401 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:28,793 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1473
+2026-04-03 17:18:28,794 - INFO - Query successful: 14 rows (source=example)
+2026-04-03 17:18:28,797 - INFO - QUESTION: game_pk, winner or loser, game date for all double headers in the National League in 2025
+2026-04-03 17:18:28,798 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:29,114 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1454
+2026-04-03 17:18:29,114 - INFO - Query successful: 4 rows (source=example)
+2026-04-03 17:18:29,118 - INFO - QUESTION: game_pk, opponent, winner or loser, score and game date how many regular season games did the San Francisco Giants play National League West opponents in 2025 and what were the results
+2026-04-03 17:18:29,119 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:29,688 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6496
+2026-04-03 17:18:29,689 - INFO - Query successful: 52 rows (source=example)
+2026-04-03 17:18:29,692 - INFO - QUESTION: game_pk, home team name, away team name for all games on 2025-06-30
+2026-04-03 17:18:29,693 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:29,989 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 418
+2026-04-03 17:18:29,989 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:18:29,992 - INFO - QUESTION: game_pk, home team name, away team name for all games on Opening Day
+2026-04-03 17:18:29,993 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:30,264 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 418
+2026-04-03 17:18:30,265 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:18:30,268 - INFO - QUESTION: player, position, signing bonus for the TOP 10 signing bonus in 2025 draft
+2026-04-03 17:18:30,269 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:30,539 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 764
+2026-04-03 17:18:30,540 - INFO - Query successful: 10 rows (source=example)
+2026-04-03 17:18:30,543 - INFO - QUESTION: player, position, signing bonus for the TOP 3 signing bonus for each round in 2025 draft
+2026-04-03 17:18:30,544 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:30,796 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1117
+2026-04-03 17:18:30,797 - ERROR - Query error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'pick_round__v_text'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'pick_round__v_text'. (207); [42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'pick_round__v_text'. (207)")
+[SQL: SELECT ISNULL(CAST(d.pick_round AS nvarchar(50)), d.pick_round__v_text) AS round, d.person__full_name, d.person__primary_position__name, CAST(d.signing_bonus AS decimal(18,2)) AS signing_bonus FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY ISNULL(CAST(pick_round AS nvarchar(50)), pick_round__v_text) ORDER BY CAST(ISNULL(NULLIF(signing_bonus, ''), '0') AS decimal(18,2)) DESC) AS rn FROM dw.draft WHERE year = 2025 AND signing_bonus IS NOT NULL AND signing_bonus != '') d WHERE d.rn <= 3 ORDER BY TRY_CAST(ISNULL(CAST(d.pick_round AS nvarchar(50)), d.pick_round__v_text) AS int), CAST(d.signing_bonus AS decimal(18,2)) DESC;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-03 17:18:30,800 - INFO - QUESTION: year, round, position, pick count for each draft round in 2020-2025
+2026-04-03 17:18:30,801 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:31,016 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1011
+2026-04-03 17:18:31,017 - ERROR - Query error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'pick_round__v_text'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'pick_round__v_text'. (207); [42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'pick_round__v_text'. (207)")
+[SQL: SELECT d.year, ISNULL(CAST(d.pick_round AS nvarchar(50)), d.pick_round__v_text) AS round,CASE d.person__primary_position__name WHEN 'Outfield' THEN 'Outfielder' ELSE d.person__primary_position__name END AS position,COUNT(*) AS pick_count FROM dw.draft d WHERE d.year BETWEEN 2020 AND 2025 GROUP BY d.year, ISNULL(CAST(d.pick_round AS nvarchar(50)), d.pick_round__v_text),d.person__primary_position__name ORDER BY d.year, TRY_CAST(ISNULL(CAST(d.pick_round AS nvarchar(50)), d.pick_round__v_text) AS int), pick_count DESC;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-03 17:18:31,020 - INFO - QUESTION: award, season, team, player, position for AL Top Awards
+2026-04-03 17:18:31,021 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:31,241 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 7062
+2026-04-03 17:18:31,242 - INFO - Query successful: 111 rows (source=example)
+2026-04-03 17:18:31,244 - INFO - QUESTION: award, season, team, player, position for NL Top Awards
+2026-04-03 17:18:31,246 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:31,492 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 5298
+2026-04-03 17:18:31,493 - INFO - Query successful: 84 rows (source=example)
+2026-04-03 17:18:31,496 - INFO - QUESTION: pitcher, pitcher hand, batter side, pitch type, for strikeout pitches total strikeouts called or swinging and total strikeouts over 20
+2026-04-03 17:18:31,497 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:32,432 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 24505
+2026-04-03 17:18:32,433 - INFO - Query successful: 491 rows (source=example)
+2026-04-03 17:18:32,435 - INFO - QUESTION: pitcher, pitcher hand, batter side, pitch type, for first pitches
+2026-04-03 17:18:32,437 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:33,177 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 28847
+2026-04-03 17:18:33,180 - INFO - Query successful: 696 rows (source=example)
+2026-04-03 17:18:33,181 - INFO - QUESTION: pitcher name, season, pitch type, total pitch, usage, average velocity, average spin rate, whiff rate, in play rate and strike rate for Top 20 pitchers based on strike rate
+2026-04-03 17:18:33,183 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:33,572 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3195
+2026-04-03 17:18:33,573 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:33,576 - INFO - QUESTION: top 20 hitters by exit velocity in 2025
+2026-04-03 17:18:33,577 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:33,770 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2282
+2026-04-03 17:18:33,770 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:33,773 - INFO - QUESTION: top 20 hitters by barrel rate in 2025
+2026-04-03 17:18:33,776 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:33,974 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2261
+2026-04-03 17:18:33,974 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:33,977 - INFO - QUESTION: top 20 hitters by wrc_plus in 2025
+2026-04-03 17:18:33,980 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:34,143 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1923
+2026-04-03 17:18:34,144 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:34,147 - INFO - QUESTION: top 20 hitters by OBP in 2025
+2026-04-03 17:18:34,148 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:34,295 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1581
+2026-04-03 17:18:34,296 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:34,299 - INFO - QUESTION: top 20 hitters by slugging percentage in 2025
+2026-04-03 17:18:34,300 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:34,498 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1919
+2026-04-03 17:18:34,498 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:34,501 - INFO - QUESTION: top 20 fastest sprint speed hitters in 2025
+2026-04-03 17:18:34,502 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:34,660 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 431
+2026-04-03 17:18:34,661 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:18:34,664 - INFO - QUESTION: top 20 hitters by contact rate in 2025
+2026-04-03 17:18:34,665 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:34,844 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1648
+2026-04-03 17:18:34,845 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:34,848 - INFO - QUESTION: hitters with the highest whiff rate in 2025
+2026-04-03 17:18:34,849 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:35,101 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1617
+2026-04-03 17:18:35,102 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:35,105 - INFO - QUESTION: hitter season stats for a specific player across all seasons
+2026-04-03 17:18:35,107 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:35,281 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1603
+2026-04-03 17:18:35,282 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 17:18:35,285 - INFO - QUESTION: average exit velocity and barrel rate by season 2020 to 2025
+2026-04-03 17:18:35,286 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:35,478 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 968
+2026-04-03 17:18:35,479 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 17:18:35,482 - INFO - QUESTION: all season dates for 2025
+2026-04-03 17:18:35,483 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:35,641 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 468
+2026-04-03 17:18:35,641 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:35,644 - INFO - QUESTION: when does the 2025 regular season start and end
+2026-04-03 17:18:35,646 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:35,807 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 664
+2026-04-03 17:18:35,808 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 17:18:35,811 - INFO - QUESTION: when is the 2025 all star game
+2026-04-03 17:18:35,812 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:35,969 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 206
+2026-04-03 17:18:35,969 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:35,973 - INFO - QUESTION: when does 2025 spring training start and end
+2026-04-03 17:18:35,974 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:36,138 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 243
+2026-04-03 17:18:36,139 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:36,142 - INFO - QUESTION: when does the 2025 postseason start and end
+2026-04-03 17:18:36,143 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:36,282 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 253
+2026-04-03 17:18:36,282 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:36,285 - INFO - QUESTION: which seasons have a wildcard
+2026-04-03 17:18:36,286 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:36,419 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 597
+2026-04-03 17:18:36,420 - INFO - Query successful: 32 rows (source=example)
+2026-04-03 17:18:36,423 - INFO - QUESTION: all season start and end dates for every season
+2026-04-03 17:18:36,424 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:36,597 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2386
+2026-04-03 17:18:36,598 - INFO - Query successful: 36 rows (source=example)
+2026-04-03 17:18:36,601 - INFO - QUESTION: what is the qualifier plate appearances and outs pitched for 2025
+2026-04-03 17:18:36,602 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:36,796 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 242
+2026-04-03 17:18:36,797 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:36,800 - INFO - QUESTION: first and second half dates for the 2025 season
+2026-04-03 17:18:36,801 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:37,001 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 358
+2026-04-03 17:18:37,002 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:37,005 - INFO - QUESTION: when does the 2025 offseason start and end
+2026-04-03 17:18:37,006 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:37,145 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 250
+2026-04-03 17:18:37,145 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:37,148 - INFO - QUESTION: when does 2025 preseason start and end
+2026-04-03 17:18:37,150 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:37,279 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 251
+2026-04-03 17:18:37,279 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:37,282 - INFO - QUESTION: all star dates for every season
+2026-04-03 17:18:37,284 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:37,446 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 923
+2026-04-03 17:18:37,447 - INFO - Query successful: 35 rows (source=example)
+2026-04-03 17:18:37,450 - INFO - QUESTION: how many days long is the 2025 regular season
+2026-04-03 17:18:37,451 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:37,621 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 357
+2026-04-03 17:18:37,621 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:37,624 - INFO - QUESTION: how many days long is the 2025 postseason
+2026-04-03 17:18:37,626 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:37,806 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 339
+2026-04-03 17:18:37,834 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:37,899 - INFO - QUESTION: regular season length in days for each season
+2026-04-03 17:18:37,903 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:38,304 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1742
+2026-04-03 17:18:38,336 - INFO - Query successful: 36 rows (source=example)
+2026-04-03 17:18:38,533 - INFO - QUESTION: qualifier plate appearances by season
+2026-04-03 17:18:38,573 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:39,008 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 818
+2026-04-03 17:18:39,018 - INFO - Query successful: 36 rows (source=example)
+2026-04-03 17:18:39,385 - INFO - QUESTION: what season is currently active today
+2026-04-03 17:18:39,406 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:40,884 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 407
+2026-04-03 17:18:40,884 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:18:40,889 - INFO - QUESTION: spring training dates for every season
+2026-04-03 17:18:40,891 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:41,488 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1050
+2026-04-03 17:18:41,488 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:41,491 - INFO - QUESTION: complete calendar for the 2025 season all key dates
+2026-04-03 17:18:41,494 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:41,690 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 647
+2026-04-03 17:18:41,690 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:41,693 - INFO - QUESTION: seasons where postseason started before October
+2026-04-03 17:18:41,695 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:41,855 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 423
+2026-04-03 17:18:41,856 - INFO - Query successful: 7 rows (source=example)
+2026-04-03 17:18:41,859 - INFO - QUESTION: top 20 home run hitters in 2025
+2026-04-03 17:18:41,860 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:42,029 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 639
+2026-04-03 17:18:42,029 - INFO - Query successful: 5 rows (source=example)
+2026-04-03 17:18:42,032 - INFO - QUESTION: top 20 batting average in 2025
+2026-04-03 17:18:42,033 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:42,235 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1532
+2026-04-03 17:18:42,236 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:42,239 - INFO - QUESTION: top 20 RBI leaders in 2025
+2026-04-03 17:18:42,241 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:42,398 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1380
+2026-04-03 17:18:42,399 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:42,402 - INFO - QUESTION: top 20 stolen base leaders in 2025
+2026-04-03 17:18:42,404 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:42,583 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1452
+2026-04-03 17:18:42,583 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:42,586 - INFO - QUESTION: top 20 OPS leaders in 2025
+2026-04-03 17:18:42,588 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:42,763 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1636
+2026-04-03 17:18:42,764 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:42,767 - INFO - QUESTION: top 20 strikeout pitchers in 2025
+2026-04-03 17:18:42,769 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:42,933 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1606
+2026-04-03 17:18:42,933 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:42,936 - INFO - QUESTION: top 20 ERA leaders starters in 2025
+2026-04-03 17:18:42,937 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:43,116 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1626
+2026-04-03 17:18:43,117 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:43,120 - INFO - QUESTION: top 20 WHIP leaders in 2025
+2026-04-03 17:18:43,121 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:43,298 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1645
+2026-04-03 17:18:43,299 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:43,302 - INFO - QUESTION: top 20 wins leaders pitchers in 2020-2025
+2026-04-03 17:18:43,303 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:43,464 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1197
+2026-04-03 17:18:43,465 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:43,467 - INFO - QUESTION: top 20 saves leaders in 2025
+2026-04-03 17:18:43,469 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:43,607 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1441
+2026-04-03 17:18:43,608 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:43,612 - INFO - QUESTION: season stats for a specific player
+2026-04-03 17:18:43,614 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:43,853 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1357
+2026-04-03 17:18:43,854 - INFO - Query successful: 11 rows (source=example)
+2026-04-03 17:18:43,858 - INFO - QUESTION: all stats for a specific player in 2025
+2026-04-03 17:18:43,860 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:44,045 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 672
+2026-04-03 17:18:44,046 - INFO - Query successful: 2 rows (source=example)
+2026-04-03 17:18:44,053 - INFO - QUESTION: top 20 hits leaders in 2025
+2026-04-03 17:18:44,056 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:44,237 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1486
+2026-04-03 17:18:44,238 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:44,242 - INFO - QUESTION: top 20 doubles leaders in 2025
+2026-04-03 17:18:44,244 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:44,374 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1378
+2026-04-03 17:18:44,374 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:44,377 - INFO - QUESTION: top 20 walks leaders in 2025
+2026-04-03 17:18:44,379 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:44,550 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1462
+2026-04-03 17:18:44,551 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:44,554 - INFO - QUESTION: top 20 strikeout batters in 2025
+2026-04-03 17:18:44,555 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:44,705 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 649
+2026-04-03 17:18:44,706 - INFO - Query successful: 5 rows (source=example)
+2026-04-03 17:18:44,709 - INFO - QUESTION: all San Francisco Giants hitter stats in 2025
+2026-04-03 17:18:44,710 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:44,907 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 518
+2026-04-03 17:18:44,907 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:18:44,910 - INFO - QUESTION: all San Francisco Giants pitcher stats in 2025
+2026-04-03 17:18:44,912 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:45,091 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 619
+2026-04-03 17:18:45,092 - INFO - Query successful: 3 rows (source=example)
+2026-04-03 17:18:45,095 - INFO - QUESTION: top 20 fielding percentage leaders in 2025
+2026-04-03 17:18:45,096 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:45,258 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1922
+2026-04-03 17:18:45,259 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:45,261 - INFO - QUESTION: top 20 strikeouts per 9 innings for pitchers in 2025
+2026-04-03 17:18:45,263 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:45,458 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1824
+2026-04-03 17:18:45,460 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:45,462 - INFO - QUESTION: pitchers with the most complete games in 2025
+2026-04-03 17:18:45,463 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:45,671 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1198
+2026-04-03 17:18:45,672 - INFO - Query successful: 15 rows (source=example)
+2026-04-03 17:18:45,678 - INFO - QUESTION: pitchers with most wild pitches in 2025
+2026-04-03 17:18:45,681 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:45,846 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1427
+2026-04-03 17:18:45,847 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:45,850 - INFO - QUESTION: top 20 total bases leaders in 2025
+2026-04-03 17:18:45,852 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:46,013 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1568
+2026-04-03 17:18:46,013 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:46,016 - INFO - QUESTION: players with the most ground into double plays in 2025
+2026-04-03 17:18:46,017 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:46,206 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1424
+2026-04-03 17:18:46,207 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:46,210 - INFO - QUESTION: top 20 on base percentage leaders in 2025
+2026-04-03 17:18:46,211 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:46,388 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1629
+2026-04-03 17:18:46,389 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:46,391 - INFO - QUESTION: pitchers with most holds in 2025
+2026-04-03 17:18:46,393 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:46,544 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1396
+2026-04-03 17:18:46,545 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:46,548 - INFO - QUESTION: career stats for a specific player all seasons
+2026-04-03 17:18:46,549 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:46,753 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1424
+2026-04-03 17:18:46,754 - INFO - Query successful: 13 rows (source=example)
+2026-04-03 17:18:46,757 - INFO - QUESTION: top 20 slugging percentage leaders in 2025
+2026-04-03 17:18:46,759 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:46,941 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1611
+2026-04-03 17:18:46,941 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:46,944 - INFO - QUESTION: relief pitchers with most appearances in 2025
+2026-04-03 17:18:46,946 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:47,134 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 491
+2026-04-03 17:18:47,134 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:18:47,137 - INFO - QUESTION: league hitting stats averages in 2025
+2026-04-03 17:18:47,138 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:47,297 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 697
+2026-04-03 17:18:47,298 - INFO - Query successful: 2 rows (source=example)
+2026-04-03 17:18:47,301 - INFO - QUESTION: how many games were played in the 2025 regular season
+2026-04-03 17:18:47,302 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:47,627 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 258
+2026-04-03 17:18:47,627 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:47,630 - INFO - QUESTION: game_pk, home team, away team, home score, away score for all games on 2025-04-15
+2026-04-03 17:18:47,632 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:47,948 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1112
+2026-04-03 17:18:47,949 - INFO - Query successful: 14 rows (source=example)
+2026-04-03 17:18:47,952 - INFO - QUESTION: all day games in 2025 regular season with home team, away team, and score
+2026-04-03 17:18:47,953 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:48,267 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 8459
+2026-04-03 17:18:48,268 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:18:48,270 - INFO - QUESTION: all night games in 2025 regular season count
+2026-04-03 17:18:48,272 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:48,530 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 333
+2026-04-03 17:18:48,531 - INFO - Query successful: 2 rows (source=example)
+2026-04-03 17:18:48,534 - INFO - QUESTION: all double header games in 2025 with home team, away team, and date
+2026-04-03 17:18:48,535 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:48,856 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1035
+2026-04-03 17:18:48,856 - INFO - Query successful: 7 rows (source=example)
+2026-04-03 17:18:48,860 - INFO - QUESTION: count of double header games in 2025 by team
+2026-04-03 17:18:48,862 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:49,136 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 486
+2026-04-03 17:18:49,136 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 17:18:49,139 - INFO - QUESTION: all postponed or suspended games in 2025
+2026-04-03 17:18:49,141 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:49,415 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3780
+2026-04-03 17:18:49,416 - INFO - Query successful: 27 rows (source=example)
+2026-04-03 17:18:49,419 - INFO - QUESTION: rescheduled games in 2025 original game date
+2026-04-03 17:18:49,420 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:49,676 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 712
+2026-04-03 17:18:49,676 - INFO - Query successful: 3 rows (source=example)
+2026-04-03 17:18:49,679 - INFO - QUESTION: games rescheduled in 2025 with original date and new date
+2026-04-03 17:18:49,681 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:49,954 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 712
+2026-04-03 17:18:49,955 - INFO - Query successful: 3 rows (source=example)
+2026-04-03 17:18:49,958 - INFO - QUESTION: all tie games in 2025
+2026-04-03 17:18:49,959 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:50,186 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3146
+2026-04-03 17:18:50,187 - INFO - Query successful: 35 rows (source=example)
+2026-04-03 17:18:50,190 - INFO - QUESTION: games played at each venue in 2025 with game count
+2026-04-03 17:18:50,193 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:50,525 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1059
+2026-04-03 17:18:50,525 - INFO - Query successful: 33 rows (source=example)
+2026-04-03 17:18:50,528 - INFO - QUESTION: highest scoring games in 2025 regular season top 20 by total runs
+2026-04-03 17:18:50,529 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:50,809 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2178
+2026-04-03 17:18:50,809 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:50,813 - INFO - QUESTION: lowest scoring completed games in 2025 regular season top 20 by total runs
+2026-04-03 17:18:50,814 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:51,164 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2099
+2026-04-03 17:18:51,165 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:18:51,168 - INFO - QUESTION: shutout games in 2025 regular season with winning and losing team
+2026-04-03 17:18:51,170 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:51,449 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 10566
+2026-04-03 17:18:51,450 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:18:51,453 - INFO - QUESTION: how many shutouts did each team pitch in 2025 regular season
+2026-04-03 17:18:51,455 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:51,744 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1276
+2026-04-03 17:18:51,745 - INFO - Query successful: 30 rows (source=example)
+2026-04-03 17:18:51,749 - INFO - QUESTION: home wins and away wins for each team in 2025 regular season
+2026-04-03 17:18:51,751 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:52,264 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1474
+2026-04-03 17:18:52,265 - INFO - Query successful: 30 rows (source=example)
+2026-04-03 17:18:52,269 - INFO - QUESTION: all 2025 postseason games with home team, away team, score, series, and date
+2026-04-03 17:18:52,272 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:52,579 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 5202
+2026-04-03 17:18:52,579 - INFO - Query successful: 47 rows (source=example)
+2026-04-03 17:18:52,582 - INFO - QUESTION: number of games in each postseason series in 2025
+2026-04-03 17:18:52,584 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:52,884 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1609
+2026-04-03 17:18:52,925 - INFO - Query successful: 18 rows (source=example)
+2026-04-03 17:18:53,129 - INFO - QUESTION: all 2025 spring training games with home team, away team, and score
+2026-04-03 17:18:53,132 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:53,846 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 8403
+2026-04-03 17:18:53,849 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:18:53,855 - INFO - QUESTION: games won by the home team vs away team in 2025 regular season
+2026-04-03 17:18:53,857 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:54,653 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 560
+2026-04-03 17:18:54,964 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:54,964 - INFO - QUESTION: games per month in 2025 regular season
+2026-04-03 17:18:54,966 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:56,337 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 509
+2026-04-03 17:18:56,337 - INFO - Query successful: 7 rows (source=example)
+2026-04-03 17:18:56,340 - INFO - QUESTION: games played on each day of the week in 2025 regular season
+2026-04-03 17:18:56,341 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:56,640 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 549
+2026-04-03 17:18:56,640 - INFO - Query successful: 7 rows (source=example)
+2026-04-03 17:18:56,643 - INFO - QUESTION: all extra inning games in 2025 regular season
+2026-04-03 17:18:56,644 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:56,905 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 539
+2026-04-03 17:18:56,905 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:18:56,908 - INFO - QUESTION: walk-off wins in 2025 regular season where home team won
+2026-04-03 17:18:56,911 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:57,241 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 8508
+2026-04-03 17:18:57,241 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:18:57,244 - INFO - QUESTION: series game number and games in series for all 2025 regular season series between two specific teams Giants and Dodgers
+2026-04-03 17:18:57,246 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:57,671 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1845
+2026-04-03 17:18:57,672 - INFO - Query successful: 13 rows (source=example)
+2026-04-03 17:18:57,675 - INFO - QUESTION: average runs scored per game by home team and away team in 2025 regular season
+2026-04-03 17:18:57,676 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:58,000 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 474
+2026-04-03 17:18:58,001 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:18:58,004 - INFO - QUESTION: all 2025 regular season games not yet played or in progress
+2026-04-03 17:18:58,005 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:58,275 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 889
+2026-04-03 17:18:58,275 - INFO - Query successful: 5 rows (source=example)
+2026-04-03 17:18:58,278 - INFO - QUESTION: one run games in 2025 regular season count per team
+2026-04-03 17:18:58,280 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:58,533 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1201
+2026-04-03 17:18:58,534 - INFO - Query successful: 30 rows (source=example)
+2026-04-03 17:18:58,537 - INFO - QUESTION: largest margin of victory games in 2025 regular season top 10
+2026-04-03 17:18:58,538 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:58,846 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1629
+2026-04-03 17:18:58,847 - INFO - Query successful: 10 rows (source=example)
+2026-04-03 17:18:58,850 - INFO - QUESTION: win loss record for each team in 2025 regular season
+2026-04-03 17:18:58,852 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:59,256 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2214
+2026-04-03 17:18:59,257 - INFO - Query successful: 30 rows (source=example)
+2026-04-03 17:18:59,265 - INFO - QUESTION: all 2025 regular season games for a specific team New York Yankees including opponent, score, home or away, and date
+2026-04-03 17:18:59,268 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:18:59,739 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 12388
+2026-04-03 17:18:59,742 - INFO - Query successful: 161 rows (source=example)
+2026-04-03 17:18:59,750 - INFO - QUESTION: total runs scored by each team home and away combined in 2025 regular season
+2026-04-03 17:18:59,751 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:00,256 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1573
+2026-04-03 17:19:00,258 - INFO - Query successful: 30 rows (source=example)
+2026-04-03 17:19:00,260 - INFO - QUESTION: all awards won by Shohei Ohtani across all seasons
+2026-04-03 17:19:00,262 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:00,465 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 5341
+2026-04-03 17:19:00,466 - INFO - Query successful: 57 rows (source=example)
+2026-04-03 17:19:00,469 - INFO - QUESTION: all awards won by Mookie Betts across all seasons
+2026-04-03 17:19:00,471 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:00,720 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 4527
+2026-04-03 17:19:00,721 - INFO - Query successful: 54 rows (source=example)
+2026-04-03 17:19:00,724 - INFO - QUESTION: all awards won by Freddie Freeman across all seasons
+2026-04-03 17:19:00,726 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:00,983 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3424
+2026-04-03 17:19:00,984 - INFO - Query successful: 39 rows (source=example)
+2026-04-03 17:19:00,987 - INFO - QUESTION: all awards won by Aaron Judge across all seasons
+2026-04-03 17:19:00,988 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:01,217 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 5210
+2026-04-03 17:19:01,218 - INFO - Query successful: 62 rows (source=example)
+2026-04-03 17:19:01,226 - INFO - QUESTION: all awards won by Gerrit Cole across all seasons
+2026-04-03 17:19:01,228 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:01,510 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1701
+2026-04-03 17:19:01,512 - INFO - Query successful: 18 rows (source=example)
+2026-04-03 17:19:01,518 - INFO - QUESTION: total number of awards won by each team all time sorted by most awards
+2026-04-03 17:19:01,520 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:01,854 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1018
+2026-04-03 17:19:01,855 - INFO - Query successful: 30 rows (source=example)
+2026-04-03 17:19:01,858 - INFO - QUESTION: total number of awards won by each team in 2025
+2026-04-03 17:19:01,860 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:02,209 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1003
+2026-04-03 17:19:02,211 - INFO - Query successful: 30 rows (source=example)
+2026-04-03 17:19:02,216 - INFO - QUESTION: total number of awards won by each team by season from 2020 to 2025
+2026-04-03 17:19:02,220 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:02,638 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 5932
+2026-04-03 17:19:02,641 - INFO - Query successful: 179 rows (source=example)
+2026-04-03 17:19:02,645 - INFO - QUESTION: which team has won the most Cy Young awards all time
+2026-04-03 17:19:02,646 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:02,920 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 553
+2026-04-03 17:19:02,921 - INFO - Query successful: 10 rows (source=example)
+2026-04-03 17:19:02,925 - INFO - QUESTION: which team has won the most MVP awards all time
+2026-04-03 17:19:02,926 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:03,227 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 542
+2026-04-03 17:19:03,228 - INFO - Query successful: 10 rows (source=example)
+2026-04-03 17:19:03,231 - INFO - QUESTION: all MVP award winners from 2015 to 2025 with team
+2026-04-03 17:19:03,233 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:03,534 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1855
+2026-04-03 17:19:03,536 - INFO - Query successful: 22 rows (source=example)
+2026-04-03 17:19:03,557 - INFO - QUESTION: which team has won the most Silver Slugger awards all time
+2026-04-03 17:19:03,559 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:03,900 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 598
+2026-04-03 17:19:03,900 - INFO - Query successful: 10 rows (source=example)
+2026-04-03 17:19:03,903 - INFO - QUESTION: which team has won the most Gold Glove awards all time
+2026-04-03 17:19:03,905 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:04,356 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 565
+2026-04-03 17:19:04,357 - INFO - Query successful: 10 rows (source=example)
+2026-04-03 17:19:04,360 - INFO - QUESTION: all award winners for the Los Angeles Dodgers in 2025
+2026-04-03 17:19:04,363 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:04,590 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3992
+2026-04-03 17:19:04,591 - INFO - Query successful: 48 rows (source=example)
+2026-04-03 17:19:04,595 - INFO - QUESTION: all award winners for the New York Yankees in 2025
+2026-04-03 17:19:04,598 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:04,819 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2033
+2026-04-03 17:19:04,820 - INFO - Query successful: 23 rows (source=example)
+2026-04-03 17:19:04,825 - INFO - QUESTION: all award winners for the San Francisco Giants in 2025
+2026-04-03 17:19:04,828 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:05,084 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 814
+2026-04-03 17:19:05,084 - INFO - Query successful: 7 rows (source=example)
+2026-04-03 17:19:05,087 - INFO - QUESTION: all award winners for the Atlanta Braves all time sorted by season
+2026-04-03 17:19:05,090 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:05,358 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 24360
+2026-04-03 17:19:05,360 - INFO - Query successful: 302 rows (source=example)
+2026-04-03 17:19:05,362 - INFO - QUESTION: players with the most career awards all time top 20
+2026-04-03 17:19:05,363 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:06,072 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 668
+2026-04-03 17:19:06,072 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:06,075 - INFO - QUESTION: players with the most awards in 2025
+2026-04-03 17:19:06,077 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:06,346 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 940
+2026-04-03 17:19:06,347 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:06,350 - INFO - QUESTION: all All-Star selections in 2025 by team with player name and position
+2026-04-03 17:19:06,351 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:06,603 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 5443
+2026-04-03 17:19:06,604 - INFO - Query successful: 81 rows (source=example)
+2026-04-03 17:19:06,607 - INFO - QUESTION: how many All-Star selections did each team have in 2025
+2026-04-03 17:19:06,610 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:07,030 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1038
+2026-04-03 17:19:07,031 - INFO - Query successful: 30 rows (source=example)
+2026-04-03 17:19:07,034 - INFO - QUESTION: all Cy Young award winners from 2015 to 2025 with team
+2026-04-03 17:19:07,036 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:07,358 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1998
+2026-04-03 17:19:07,359 - INFO - Query successful: 22 rows (source=example)
+2026-04-03 17:19:07,379 - INFO - QUESTION: all Rookie of the Year award winners from 2015 to 2025 with team
+2026-04-03 17:19:07,387 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:07,903 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2568
+2026-04-03 17:19:07,958 - INFO - Query successful: 22 rows (source=example)
+2026-04-03 17:19:08,179 - INFO - QUESTION: all Comeback Player of the Year award winners from 2015 to 2025 with team
+2026-04-03 17:19:08,233 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:09,695 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2397
+2026-04-03 17:19:10,383 - INFO - Query successful: 22 rows (source=example)
+2026-04-03 17:19:10,384 - INFO - QUESTION: all distinct award types that exist in the award_recipients table
+2026-04-03 17:19:10,386 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:12,128 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 16723
+2026-04-03 17:19:12,128 - INFO - Query successful: 501 rows (source=example)
+2026-04-03 17:19:12,133 - INFO - QUESTION: count of each award type given out across all seasons
+2026-04-03 17:19:12,134 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:12,698 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 19456
+2026-04-03 17:19:12,699 - INFO - Query successful: 501 rows (source=example)
+2026-04-03 17:19:12,704 - INFO - QUESTION: award winners by position type in 2025 hitter or pitcher
+2026-04-03 17:19:12,706 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:13,567 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 111770
+2026-04-03 17:19:13,570 - INFO - Query successful: 1731 rows (source=example)
+2026-04-03 17:19:13,571 - INFO - QUESTION: number of awards won by National League teams vs American League teams in 2025
+2026-04-03 17:19:13,572 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:14,592 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 381
+2026-04-03 17:19:14,710 - INFO - Query successful: 2 rows (source=example)
+2026-04-03 17:19:14,736 - INFO - QUESTION: players who have won awards with multiple different teams across their career
+2026-04-03 17:19:14,738 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:18,898 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 195187
+2026-04-03 17:19:18,918 - INFO - Query successful: 448 rows (source=example)
+2026-04-03 17:19:18,919 - INFO - QUESTION: all awards and winners in 2025 full list sorted by award name and player name
+2026-04-03 17:19:18,921 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:19,306 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 176059
+2026-04-03 17:19:19,327 - INFO - Query successful: 1731 rows (source=example)
+2026-04-03 17:19:19,329 - INFO - QUESTION: all active players born in Los Angeles
+2026-04-03 17:19:19,330 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:19,503 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1331
+2026-04-03 17:19:19,503 - INFO - Query successful: 15 rows (source=example)
+2026-04-03 17:19:19,506 - INFO - QUESTION: all active players born in California
+2026-04-03 17:19:19,508 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:19,674 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6921
+2026-04-03 17:19:19,674 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:19,677 - INFO - QUESTION: top 20 birth states with the most active players
+2026-04-03 17:19:19,679 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:19,890 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 540
+2026-04-03 17:19:19,890 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:19,893 - INFO - QUESTION: top 20 birth cities with the most active players
+2026-04-03 17:19:19,895 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:20,165 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1000
+2026-04-03 17:19:20,165 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:20,169 - INFO - QUESTION: top 20 birth countries with the most active players
+2026-04-03 17:19:20,170 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:20,377 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 591
+2026-04-03 17:19:20,377 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:20,380 - INFO - QUESTION: all active players born in the Dominican Republic
+2026-04-03 17:19:20,381 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:20,575 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 374
+2026-04-03 17:19:20,576 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:20,579 - INFO - QUESTION: all active players born in Venezuela
+2026-04-03 17:19:20,581 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:20,776 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 7120
+2026-04-03 17:19:20,777 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:20,783 - INFO - QUESTION: all active players born in Puerto Rico
+2026-04-03 17:19:20,785 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:20,973 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 374
+2026-04-03 17:19:20,974 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:20,977 - INFO - QUESTION: all active players born outside the USA
+2026-04-03 17:19:20,978 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:21,234 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 14328
+2026-04-03 17:19:21,235 - INFO - Query successful: 200 rows (source=example)
+2026-04-03 17:19:21,238 - INFO - QUESTION: count of active players by birth country
+2026-04-03 17:19:21,239 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:21,453 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 733
+2026-04-03 17:19:21,453 - INFO - Query successful: 30 rows (source=example)
+2026-04-03 17:19:21,456 - INFO - QUESTION: all active players born in Texas
+2026-04-03 17:19:21,458 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:21,634 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6174
+2026-04-03 17:19:21,634 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:21,637 - INFO - QUESTION: all active players born in Florida
+2026-04-03 17:19:21,638 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:21,822 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6313
+2026-04-03 17:19:21,823 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:21,826 - INFO - QUESTION: all active players who were drafted in 2020
+2026-04-03 17:19:21,827 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:21,994 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 5520
+2026-04-03 17:19:21,995 - INFO - Query successful: 81 rows (source=example)
+2026-04-03 17:19:21,998 - INFO - QUESTION: all active players who were drafted in 2018
+2026-04-03 17:19:21,999 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:22,176 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6728
+2026-04-03 17:19:22,177 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:22,181 - INFO - QUESTION: count of active players by draft year
+2026-04-03 17:19:22,182 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:22,354 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 496
+2026-04-03 17:19:22,355 - INFO - Query successful: 22 rows (source=example)
+2026-04-03 17:19:22,358 - INFO - QUESTION: active players drafted between 2015 and 2020 with position and debut date
+2026-04-03 17:19:22,359 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:22,590 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 11960
+2026-04-03 17:19:22,613 - INFO - Query successful: 200 rows (source=example)
+2026-04-03 17:19:22,614 - INFO - QUESTION: active players who were never drafted undrafted
+2026-04-03 17:19:22,616 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:22,871 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6092
+2026-04-03 17:19:22,872 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:22,875 - INFO - QUESTION: active pitchers drafted in 2019
+2026-04-03 17:19:22,878 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:23,039 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 7456
+2026-04-03 17:19:23,040 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:23,043 - INFO - QUESTION: players who made their MLB debut in 2025
+2026-04-03 17:19:23,047 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:23,300 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 7499
+2026-04-03 17:19:23,301 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:23,307 - INFO - QUESTION: players who made their MLB debut in 2024
+2026-04-03 17:19:23,311 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:23,528 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 7682
+2026-04-03 17:19:23,529 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:23,531 - INFO - QUESTION: count of active players by MLB debut year
+2026-04-03 17:19:23,533 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:23,737 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 558
+2026-04-03 17:19:23,738 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:23,742 - INFO - QUESTION: active players with the earliest MLB debut dates veterans
+2026-04-03 17:19:23,743 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:24,004 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1473
+2026-04-03 17:19:24,005 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:24,008 - INFO - QUESTION: most recent MLB debut dates active players who debuted latest
+2026-04-03 17:19:24,010 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:24,243 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1610
+2026-04-03 17:19:24,244 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:24,247 - INFO - QUESTION: active players who debuted before 2010
+2026-04-03 17:19:24,248 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:24,460 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1108
+2026-04-03 17:19:24,461 - INFO - Query successful: 13 rows (source=example)
+2026-04-03 17:19:24,465 - INFO - QUESTION: debut date, birth city, draft year for a specific player Shohei Ohtani
+2026-04-03 17:19:24,466 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:24,681 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 587
+2026-04-03 17:19:24,682 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:19:24,684 - INFO - QUESTION: top 20 tallest active players
+2026-04-03 17:19:24,685 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:24,817 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1535
+2026-04-03 17:19:24,818 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:24,821 - INFO - QUESTION: top 20 heaviest active players by weight
+2026-04-03 17:19:24,823 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:25,016 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1591
+2026-04-03 17:19:25,017 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:25,020 - INFO - QUESTION: top 20 lightest active players by weight
+2026-04-03 17:19:25,022 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:25,192 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1696
+2026-04-03 17:19:25,193 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:25,195 - INFO - QUESTION: average weight of active players by position
+2026-04-03 17:19:25,197 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:25,401 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 723
+2026-04-03 17:19:25,402 - INFO - Query successful: 11 rows (source=example)
+2026-04-03 17:19:25,405 - INFO - QUESTION: average weight of active pitchers vs hitters
+2026-04-03 17:19:25,406 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:25,599 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 527
+2026-04-03 17:19:25,600 - INFO - Query successful: 2 rows (source=example)
+2026-04-03 17:19:25,609 - INFO - QUESTION: full profile for a specific player Aaron Judge with birth city, height, weight, debut, draft year
+2026-04-03 17:19:25,613 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:26,050 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 505
+2026-04-03 17:19:26,051 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:19:26,064 - INFO - QUESTION: all active players born in the same city as Shohei Ohtani
+2026-04-03 17:19:26,068 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:26,306 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 584
+2026-04-03 17:19:26,306 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:26,310 - INFO - QUESTION: active players drafted in the same year as their MLB debut year
+2026-04-03 17:19:26,311 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:26,528 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 627
+2026-04-03 17:19:26,528 - INFO - Query successful: 3 rows (source=example)
+2026-04-03 17:19:26,531 - INFO - QUESTION: active players over 250 pounds
+2026-04-03 17:19:26,532 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:26,667 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 4966
+2026-04-03 17:19:26,668 - INFO - Query successful: 72 rows (source=example)
+2026-04-03 17:19:26,676 - INFO - QUESTION: active players under 180 pounds
+2026-04-03 17:19:26,678 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:26,811 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6978
+2026-04-03 17:19:26,812 - INFO - Query successful: 100 rows (source=example)
+2026-04-03 17:19:26,815 - INFO - QUESTION: all active players with their birth city state country height weight debut date and draft year
+2026-04-03 17:19:26,816 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:27,141 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 18137
+2026-04-03 17:19:27,142 - INFO - Query successful: 200 rows (source=example)
+2026-04-03 17:19:27,145 - INFO - QUESTION: active players with no known birth city
+2026-04-03 17:19:27,146 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:27,292 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 356
+2026-04-03 17:19:27,292 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:27,295 - INFO - QUESTION: count of active players by position and birth country
+2026-04-03 17:19:27,296 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:27,602 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3530
+2026-04-03 17:19:27,602 - INFO - Query successful: 112 rows (source=example)
+2026-04-03 17:19:27,607 - INFO - QUESTION: active players born in Japan
+2026-04-03 17:19:27,609 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:27,811 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1920
+2026-04-03 17:19:27,812 - INFO - Query successful: 19 rows (source=example)
+2026-04-03 17:19:27,816 - INFO - QUESTION: active players born in Cuba
+2026-04-03 17:19:27,817 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:27,976 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 4253
+2026-04-03 17:19:27,977 - INFO - Query successful: 52 rows (source=example)
+2026-04-03 17:19:27,980 - INFO - QUESTION: active players drafted in 2022 with their birth city debut date height and weight
+2026-04-03 17:19:27,981 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:28,233 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 6279
+2026-04-03 17:19:28,234 - INFO - Query successful: 71 rows (source=example)
+2026-04-03 17:19:28,235 - INFO - QUESTION: name and position of 2024 draft picks from Texas
+2026-04-03 17:19:28,237 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:28,496 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1478
+2026-04-03 17:19:28,497 - INFO - Query successful: 44 rows (source=example)
+2026-04-03 17:19:28,500 - INFO - QUESTION: name and position of 2023 draft picks from Florida
+2026-04-03 17:19:28,502 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:28,747 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2096
+2026-04-03 17:19:28,748 - INFO - Query successful: 62 rows (source=example)
+2026-04-03 17:19:28,751 - INFO - QUESTION: top 10 signing bonus in 2024 draft with player and position
+2026-04-03 17:19:28,752 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:28,959 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 773
+2026-04-03 17:19:28,960 - INFO - Query successful: 10 rows (source=example)
+2026-04-03 17:19:28,963 - INFO - QUESTION: top 10 signing bonus in 2023 draft with player and position
+2026-04-03 17:19:28,964 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:29,184 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 769
+2026-04-03 17:19:29,186 - INFO - Query successful: 10 rows (source=example)
+2026-04-03 17:19:29,187 - INFO - QUESTION: name and position of 2022 draft picks from Ohio
+2026-04-03 17:19:29,190 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:29,441 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 990
+2026-04-03 17:19:29,443 - INFO - Query successful: 15 rows (source=example)
+2026-04-03 17:19:29,445 - INFO - QUESTION: top 20 schools with most draft picks in 2024
+2026-04-03 17:19:29,447 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:29,697 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 618
+2026-04-03 17:19:29,697 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:29,701 - INFO - QUESTION: top 20 schools with most draft picks in 2022
+2026-04-03 17:19:29,703 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:29,977 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 611
+2026-04-03 17:19:29,977 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:29,980 - INFO - QUESTION: name and position of college draft picks in 2024
+2026-04-03 17:19:29,982 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:30,133 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 460
+2026-04-03 17:19:30,133 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:30,136 - INFO - QUESTION: first round picks in 2025 draft with name position and school
+2026-04-03 17:19:30,137 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:30,340 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 535
+2026-04-03 17:19:30,340 - ERROR - Query error: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Conversion failed when converting the nvarchar value '4C' to data type int. (245) (SQLExecDirectW)")
+[SQL: SELECT TOP (100) d.person__full_name, d.person__primary_position__name, d.school__name, d.home__state, CAST(d.signing_bonus AS decimal(18,2)) AS signing_bonus FROM dw.draft d WHERE d.year = 2025 AND d.pick_round = 1 ORDER BY d.pick_number;]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-04-03 17:19:30,342 - INFO - QUESTION: first round picks in 2024 draft
+2026-04-03 17:19:30,345 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:30,575 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 535
+2026-04-03 17:19:30,655 - ERROR - Query error: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Conversion failed when converting the nvarchar value '1C' to data type int. (245) (SQLExecDirectW)")
+[SQL: SELECT TOP (100) d.person__full_name, d.person__primary_position__name, d.school__name, d.home__state, CAST(d.signing_bonus AS decimal(18,2)) AS signing_bonus FROM dw.draft d WHERE d.year = 2024 AND d.pick_round = 1 ORDER BY d.pick_number;]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-04-03 17:19:30,658 - INFO - QUESTION: pitchers drafted in first round in 2025
+2026-04-03 17:19:30,660 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:30,934 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 550
+2026-04-03 17:19:30,935 - ERROR - Query error: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Conversion failed when converting the nvarchar value 'SUP-3' to data type int. (245) (SQLExecDirectW)")
+[SQL: SELECT TOP (50) d.person__full_name, d.pick_number, d.school__name, d.home__state FROM dw.draft d WHERE d.year = 2025 AND d.pick_round = 1 AND d.person__primary_position__name IN ('Pitcher', 'Starting Pitcher', 'Relief Pitcher') ORDER BY d.pick_number;]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-04-03 17:19:30,939 - INFO - QUESTION: how many games did the New York Yankees play the Boston Red Sox in 2025
+2026-04-03 17:19:30,942 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:31,248 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 496
+2026-04-03 17:19:31,248 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:19:31,251 - INFO - QUESTION: game_pk winner and date for all games between the Chicago Cubs and St. Louis Cardinals in 2025
+2026-04-03 17:19:31,252 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:31,584 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1338
+2026-04-03 17:19:31,584 - INFO - Query successful: 13 rows (source=example)
+2026-04-03 17:19:31,587 - INFO - QUESTION: all 2025 regular season games for the Los Angeles Dodgers including opponent score and result
+2026-04-03 17:19:31,589 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:32,140 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 12644
+2026-04-03 17:19:32,140 - INFO - Query successful: 162 rows (source=example)
+2026-04-03 17:19:32,143 - INFO - QUESTION: all 2025 regular season games for the Atlanta Braves including opponent score and result
+2026-04-03 17:19:32,145 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:32,738 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 12392
+2026-04-03 17:19:32,739 - INFO - Query successful: 159 rows (source=example)
+2026-04-03 17:19:32,741 - INFO - QUESTION: game_pk home team away team for all games on 2025-07-04
+2026-04-03 17:19:32,742 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:32,986 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1075
+2026-04-03 17:19:32,988 - INFO - Query successful: 15 rows (source=example)
+2026-04-03 17:19:32,990 - INFO - QUESTION: game_pk home team away team for all games on 2025-09-01
+2026-04-03 17:19:32,992 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:33,307 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 918
+2026-04-03 17:19:33,308 - INFO - Query successful: 12 rows (source=example)
+2026-04-03 17:19:33,311 - INFO - QUESTION: all double header games in the American League in 2025
+2026-04-03 17:19:33,313 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:33,675 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1192
+2026-04-03 17:19:33,676 - INFO - Query successful: 7 rows (source=example)
+2026-04-03 17:19:33,679 - INFO - QUESTION: regular season games the Chicago Cubs played against American League Central opponents in 2025
+2026-04-03 17:19:33,682 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:34,094 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 2082
+2026-04-03 17:19:34,095 - INFO - Query successful: 18 rows (source=example)
+2026-04-03 17:19:34,098 - INFO - QUESTION: win loss record for each American League team in 2025 regular season
+2026-04-03 17:19:34,099 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:34,509 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1742
+2026-04-03 17:19:34,510 - INFO - Query successful: 15 rows (source=example)
+2026-04-03 17:19:34,513 - INFO - QUESTION: win loss record for each National League team in 2025 regular season
+2026-04-03 17:19:34,514 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:34,965 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1783
+2026-04-03 17:19:34,965 - INFO - Query successful: 15 rows (source=example)
+2026-04-03 17:19:34,970 - INFO - QUESTION: all Houston Astros hitter stats in 2025
+2026-04-03 17:19:34,971 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:35,142 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 512
+2026-04-03 17:19:35,143 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:35,146 - INFO - QUESTION: all Houston Astros pitcher stats in 2025
+2026-04-03 17:19:35,147 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:35,314 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 676
+2026-04-03 17:19:35,315 - INFO - Query successful: 4 rows (source=example)
+2026-04-03 17:19:35,318 - INFO - QUESTION: all New York Yankees hitter stats in 2025
+2026-04-03 17:19:35,319 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:35,528 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 514
+2026-04-03 17:19:35,529 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:35,533 - INFO - QUESTION: all New York Yankees pitcher stats in 2025
+2026-04-03 17:19:35,534 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:35,707 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 670
+2026-04-03 17:19:35,708 - INFO - Query successful: 4 rows (source=example)
+2026-04-03 17:19:35,711 - INFO - QUESTION: all Los Angeles Dodgers hitter stats in 2025
+2026-04-03 17:19:35,712 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:35,886 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 509
+2026-04-03 17:19:35,886 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:19:35,890 - INFO - QUESTION: all Los Angeles Dodgers pitcher stats in 2025
+2026-04-03 17:19:35,891 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:36,166 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 521
+2026-04-03 17:19:36,167 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:19:36,186 - INFO - QUESTION: all Atlanta Braves hitter stats in 2025
+2026-04-03 17:19:36,189 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:36,399 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 512
+2026-04-03 17:19:36,400 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:36,403 - INFO - QUESTION: all Atlanta Braves pitcher stats in 2025
+2026-04-03 17:19:36,405 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:36,599 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 531
+2026-04-03 17:19:36,600 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:36,605 - INFO - QUESTION: season stats for Ronald Acuna Jr across all seasons
+2026-04-03 17:19:36,607 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:36,813 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 486
+2026-04-03 17:19:36,814 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:36,817 - INFO - QUESTION: season stats for Juan Soto across all seasons
+2026-04-03 17:19:36,818 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:36,969 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 918
+2026-04-03 17:19:36,970 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 17:19:36,973 - INFO - QUESTION: all stats for Aaron Judge in 2025
+2026-04-03 17:19:36,974 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:37,160 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 558
+2026-04-03 17:19:37,160 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:19:37,162 - INFO - QUESTION: all stats for Shohei Ohtani in 2025
+2026-04-03 17:19:37,164 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:37,327 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 564
+2026-04-03 17:19:37,327 - INFO - Query successful: 1 rows (source=example)
+2026-04-03 17:19:37,330 - INFO - QUESTION: career stats for Nolan Arenado all seasons
+2026-04-03 17:19:37,332 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:37,542 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 864
+2026-04-03 17:19:37,543 - INFO - Query successful: 7 rows (source=example)
+2026-04-03 17:19:37,546 - INFO - QUESTION: career stats for Max Scherzer all seasons
+2026-04-03 17:19:37,548 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:37,750 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1462
+2026-04-03 17:19:37,750 - INFO - Query successful: 14 rows (source=example)
+2026-04-03 17:19:37,754 - INFO - QUESTION: top 20 triples leaders in 2025
+2026-04-03 17:19:37,756 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:37,921 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1387
+2026-04-03 17:19:37,921 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:37,927 - INFO - QUESTION: top 20 intentional walks leaders in 2025
+2026-04-03 17:19:37,930 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:38,130 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1476
+2026-04-03 17:19:38,131 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:38,136 - INFO - QUESTION: top 20 hit by pitch leaders in 2025
+2026-04-03 17:19:38,137 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:38,279 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1306
+2026-04-03 17:19:38,280 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:38,288 - INFO - QUESTION: top 20 sacrifice flies leaders in 2025
+2026-04-03 17:19:38,289 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:38,490 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1262
+2026-04-03 17:19:38,491 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:38,494 - INFO - QUESTION: top 20 plate appearances leaders in 2025
+2026-04-03 17:19:38,495 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:38,673 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1464
+2026-04-03 17:19:38,674 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:38,676 - INFO - QUESTION: pitchers with the most losses in 2025
+2026-04-03 17:19:38,678 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:38,837 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1625
+2026-04-03 17:19:38,837 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:38,840 - INFO - QUESTION: pitchers with the most blown saves in 2025
+2026-04-03 17:19:38,842 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:39,013 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1452
+2026-04-03 17:19:39,013 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:39,016 - INFO - QUESTION: top 20 games pitched leaders relief pitchers in 2025
+2026-04-03 17:19:39,017 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:39,230 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 450
+2026-04-03 17:19:39,231 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:39,234 - INFO - QUESTION: league pitching stats averages ERA WHIP and strikeouts in 2025
+2026-04-03 17:19:39,236 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:39,493 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 574
+2026-04-03 17:19:39,494 - INFO - Query successful: 2 rows (source=example)
+2026-04-03 17:19:39,497 - INFO - QUESTION: top 20 hitters by hard hit rate in 2025
+2026-04-03 17:19:39,498 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:39,666 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1996
+2026-04-03 17:19:39,667 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:39,669 - INFO - QUESTION: top 20 hitters by ISO isolated power in 2025
+2026-04-03 17:19:39,671 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:39,844 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1709
+2026-04-03 17:19:39,845 - INFO - Query successful: 20 rows (source=example)
+2026-04-03 17:19:39,848 - INFO - QUESTION: hitter season features for Ronald Acuna Jr across all seasons
+2026-04-03 17:19:39,850 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:40,016 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 534
+2026-04-03 17:19:40,016 - INFO - Query successful: 0 rows (source=example)
+2026-04-03 17:19:40,026 - INFO - QUESTION: hitter season features for Juan Soto across all seasons
+2026-04-03 17:19:40,028 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:40,237 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1596
+2026-04-03 17:19:40,237 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 17:19:40,240 - INFO - QUESTION: hitter season features for Yordan Alvarez across all seasons
+2026-04-03 17:19:40,242 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:40,463 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1463
+2026-04-03 17:19:40,464 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 17:19:40,466 - INFO - QUESTION: average exit velocity and barrel rate by season 2018 to 2025
+2026-04-03 17:19:40,467 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:40,831 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 826
+2026-04-03 17:19:40,950 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 17:19:40,954 - INFO - QUESTION: all season dates for 2024
+2026-04-03 17:19:40,956 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:42,398 - ERROR - Connection error
+2026-04-03 17:19:42,429 - INFO - QUESTION: when does the 2024 regular season start and end
+2026-04-03 17:19:42,432 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:44,627 - ERROR - Connection error
+2026-04-03 17:19:44,870 - INFO - QUESTION: when is the 2024 all star game
+2026-04-03 17:19:44,878 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:47,010 - ERROR - Connection error
+2026-04-03 17:19:47,013 - INFO - QUESTION: when does the 2024 postseason start and end
+2026-04-03 17:19:47,015 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:49,317 - ERROR - Connection error
+2026-04-03 17:19:49,324 - INFO - QUESTION: what is the qualifier plate appearances and outs pitched for 2024
+2026-04-03 17:19:49,328 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:51,366 - ERROR - Connection error
+2026-04-03 17:19:51,372 - INFO - QUESTION: complete calendar for the 2024 season all key dates
+2026-04-03 17:19:51,376 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:53,398 - ERROR - Connection error
+2026-04-03 17:19:53,404 - INFO - QUESTION: how many days long is the 2024 regular season
+2026-04-03 17:19:53,406 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:55,437 - ERROR - Connection error
+2026-04-03 17:19:55,444 - INFO - QUESTION: all awards won by Randy Johnson across all seasons
+2026-04-03 17:19:55,448 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:57,478 - ERROR - Connection error
+2026-04-03 17:19:57,483 - INFO - QUESTION: all awards won by Clayton Kershaw across all seasons
+2026-04-03 17:19:57,484 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:19:59,522 - ERROR - Connection error
+2026-04-03 17:19:59,527 - INFO - QUESTION: all awards won by Mike Trout across all seasons
+2026-04-03 17:19:59,529 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:01,575 - ERROR - Connection error
+2026-04-03 17:20:02,244 - INFO - QUESTION: all award winners for the Houston Astros in 2025
+2026-04-03 17:20:02,246 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:04,298 - ERROR - Connection error
+2026-04-03 17:20:04,302 - INFO - QUESTION: all award winners for the Chicago Cubs in 2025
+2026-04-03 17:20:04,303 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:06,311 - ERROR - Connection error
+2026-04-03 17:20:06,318 - INFO - QUESTION: all award winners for the Boston Red Sox in 2025
+2026-04-03 17:20:06,321 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:08,358 - ERROR - Connection error
+2026-04-03 17:20:08,367 - INFO - QUESTION: all award winners for the New York Mets all time sorted by season
+2026-04-03 17:20:08,370 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:10,391 - ERROR - Connection error
+2026-04-03 17:20:10,395 - INFO - QUESTION: all award winners for the Houston Astros all time sorted by season
+2026-04-03 17:20:10,397 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:12,406 - ERROR - Connection error
+2026-04-03 17:20:12,410 - INFO - QUESTION: total number of awards won by each team in 2024
+2026-04-03 17:20:12,412 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:14,453 - ERROR - Connection error
+2026-04-03 17:20:14,460 - INFO - QUESTION: all Gold Glove award winners from 2020 to 2025 with team and position
+2026-04-03 17:20:14,465 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:16,509 - ERROR - Connection error
+2026-04-03 17:20:16,641 - INFO - QUESTION: all Silver Slugger winners from 2020 to 2025 with team
+2026-04-03 17:20:16,644 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:18,705 - ERROR - Connection error
+2026-04-03 17:20:18,751 - INFO - QUESTION: how many All-Star selections did each team have in 2024
+2026-04-03 17:20:18,755 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 17:20:20,799 - ERROR - Connection error
+2026-04-03 17:20:22,571 - INFO - QUESTION: all active players born in New York
+2026-04-03 17:20:22,573 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000

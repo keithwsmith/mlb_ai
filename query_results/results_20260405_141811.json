@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-04-05T14:18:11.503989",
+  "total_queries": 1,
+  "successful": 0,
+  "failed": 1,
+  "success_rate": 0.0,
+  "total_time": 294.633065700531,
+  "results": [
+    {
+      "question": "record, team the San Francisco Giants have the best home record against since 1960",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 294.4490714073181,
+      "error": "['[WinError 10054] An existing connection was forcibly closed by the remote host', '[WinError 10051] A socket operation was attempted to an unreachable network', '[WinError 10051] A socket operation was attempted to an unreachable network']",
+      "success": false,
+      "row_count": 0
+    }
+  ]
+}

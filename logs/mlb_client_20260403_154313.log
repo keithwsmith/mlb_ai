@@ -1,0 +1,49 @@
+2026-04-03 15:43:13,800 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-03 15:43:13,807 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:43:13,814 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-03 15:43:13,815 - INFO - Health check: OK
+2026-04-03 15:43:13,817 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:43:13,821 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 143
+2026-04-03 15:43:13,822 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-03 15:43:13,823 - INFO - Loaded 4 questions from questions.json (list format)
+2026-04-03 15:43:13,834 - INFO - Starting batch processing: 4 questions
+2026-04-03 15:43:13,834 - INFO - QUESTION: roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024
+2026-04-03 15:43:13,836 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:43:14,391 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1111
+2026-04-03 15:43:14,392 - INFO - Query successful: 17 rows (source=example)
+2026-04-03 15:43:14,394 - INFO - QUESTION: roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025
+2026-04-03 15:43:14,396 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:43:14,708 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1028
+2026-04-03 15:43:14,708 - INFO - Query successful: 13 rows (source=example)
+2026-04-03 15:43:14,711 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026
+2026-04-03 15:43:14,713 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:43:15,017 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 992
+2026-04-03 15:43:15,018 - INFO - Query successful: 6 rows (source=example)
+2026-04-03 15:43:15,020 - INFO - QUESTION: player, position, signing bonus for the TOP 3 signing bonus for each round in 2025 draft
+2026-04-03 15:43:15,023 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-03 15:43:15,260 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1117
+2026-04-03 15:43:15,261 - ERROR - Query error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'pick_round__v_text'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'pick_round__v_text'. (207); [42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'pick_round__v_text'. (207)")
+[SQL: SELECT ISNULL(CAST(d.pick_round AS nvarchar(50)), d.pick_round__v_text) AS round, d.person__full_name, d.person__primary_position__name, CAST(d.signing_bonus AS decimal(18,2)) AS signing_bonus FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY ISNULL(CAST(pick_round AS nvarchar(50)), pick_round__v_text) ORDER BY CAST(ISNULL(NULLIF(signing_bonus, ''), '0') AS decimal(18,2)) DESC) AS rn FROM dw.draft WHERE year = 2025 AND signing_bonus IS NOT NULL AND signing_bonus != '') d WHERE d.rn <= 3 ORDER BY TRY_CAST(ISNULL(CAST(d.pick_round AS nvarchar(50)), d.pick_round__v_text) AS int), CAST(d.signing_bonus AS decimal(18,2)) DESC;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-03 15:43:15,263 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 4
+  Successful     : 3 (75.0%)
+  Failed         : 1
+
+  Total Rows     : 36
+  Avg Query Time : 0.345s
+  Total Time     : 1.43s
+
+==========================================
+
+  FAILED QUERIES:
+    - player, position, signing bonus for the TOP 3 signing bonus for each round in 20
+      Error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name '
+
+2026-04-03 15:43:15,267 - INFO - Results exported to query_results\results_20260403_154315.json
+2026-04-03 15:43:15,270 - INFO - Results exported to query_results\results_20260403_154315.csv
+2026-04-03 15:43:15,272 - INFO - Results exported to query_results\results_20260403_154315.md

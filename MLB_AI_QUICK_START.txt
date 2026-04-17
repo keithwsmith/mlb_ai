@@ -1,0 +1,232 @@
+================================================================================
+MLB AI SYSTEM - QUICK START (5 MINUTES)
+================================================================================
+
+This is your complete MLB natural language to SQL system.
+
+================================================================================
+FILES YOU HAVE
+================================================================================
+
+1. mlb_fastapi_server.py
+   - FastAPI backend with Ollama LLM
+   - Connects to SQL Server
+   - Generates SQL from questions
+   - START THIS FIRST
+
+2. mlb_ai_client.py  
+   - Python client with caching
+   - Batch processing
+   - Result export (JSON, CSV, Markdown)
+   - RUN THIS SECOND
+
+3. INTEGRATION_GUIDE.md
+   - Complete documentation
+   - Configuration options
+   - Troubleshooting guide
+   - READ THIS FOR DETAILS
+
+================================================================================
+QUICKSTART IN 5 MINUTES
+================================================================================
+
+Step 1: Install (1 min)
+    pip install fastapi uvicorn sqlalchemy pyodbc requests langchain-ollama
+
+Step 2: Start Ollama (in Terminal 1)
+    ollama serve
+
+Step 3: Start Server (in Terminal 2)
+    python mlb_fastapi_server.py
+
+Step 4: Run Client (in Terminal 3)
+    python mlb_ai_client.py
+
+You'll see results with timing and exported files in:
+    - query_cache/ (caching)
+    - query_results/ (exports)
+    - logs/ (debugging)
+
+================================================================================
+EXAMPLE QUESTIONS
+================================================================================
+
+The client includes test questions:
+    • "TOP 20 schools with most draft picks"
+    • "game_pk, home team name, away team name for all games on 2025-06-30"
+    • "How many games did Giants play Dodgers in 2025?"
+    • "TOP 20 Home States with most draft picks"
+
+Your questions are processed through:
+    1. Cache check (instant if cached)
+    2. Example matching (fast if similar)
+    3. LLM generation (slower, more flexible)
+    4. SQL execution (database query)
+    5. Result return & export
+
+================================================================================
+USING IN YOUR CODE
+================================================================================
+
+Simple usage:
+    from mlb_ai_client import MLBQueryClient
+    
+    client = MLBQueryClient()
+    result = client.ask("TOP 10 home run hitters")
+    
+    print(f"SQL: {result.sql}")
+    print(f"Rows: {result.row_count}")
+    for row in result.rows:
+        print(row)
+
+Batch processing:
+    questions = ["Question 1", "Question 2", "Question 3"]
+    batch = client.ask_batch(questions)
+    print(batch.summary())
+    
+    # Export results
+    from mlb_ai_client import ResultExporter
+    exporter = ResultExporter()
+    exporter.export_json(batch)
+    exporter.export_csv(batch)
+    exporter.export_markdown(batch)
+
+================================================================================
+OPTIONAL: METADATA FILES
+================================================================================
+
+For better results, create metadata/ folder with JSON files:
+
+metadata/examples.json:
+    {
+        "examples": [
+            {
+                "question": "TOP 20 schools with draft picks",
+                "sql": "SELECT TOP 20 school__name, COUNT(*) FROM dw.draft GROUP BY school__name"
+            }
+        ]
+    }
+
+metadata/rules.json:
+    {
+        "rules": ["Always use SELECT TOP (100)"],
+        "common_mistakes": ["Don't join on scores"]
+    }
+
+These speed up queries and improve accuracy.
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Server won't start?
+    → Check mlb_agent.log
+    → Verify SQL Server is running
+    → Make sure Ollama is serving
+
+Connection refused?
+    → Is server running on :8000?
+    → Check: curl http://127.0.0.1:8000
+
+LLM timeout?
+    → Verify Ollama: ollama serve
+    → Check system resources (CPU/RAM)
+
+No results?
+    → Question might be too broad
+    → Check query_results/*.md for SQL
+    → Review metadata hints
+
+================================================================================
+WORKFLOW
+================================================================================
+
+YOUR CODE
+    ↓
+mlb_ai_client.ask(question)
+    ↓
+mlb_fastapi_server (POST /ask)
+    ├─ Check examples
+    └─ Call LLM if needed
+    ↓
+Ollama (llama3 model)
+    ↓
+Generate SQL
+    ↓
+Execute on SQL Server
+    ↓
+Return results + timing
+    ↓
+Client caches & exports
+    ↓
+YOUR RESULTS
+
+Total time: typically 1-5 seconds (depends on query)
+
+================================================================================
+KEY FEATURES
+================================================================================
+
+✓ Natural language → SQL
+✓ FastAPI backend
+✓ Ollama LLM integration
+✓ Client-side caching
+✓ Batch processing
+✓ Result export (JSON, CSV, Markdown)
+✓ Error handling
+✓ Performance timing
+✓ Logging
+✓ Web interface
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Get it running (5 min)
+   - Follow quickstart above
+
+2. Try web interface (2 min)
+   - Visit http://127.0.0.1:8000/ask
+   - Ask a question directly
+
+3. Check results (2 min)
+   - Review query_results/ folder
+   - Check generated SQL
+   - See timing breakdown
+
+4. Optimize (optional)
+   - Create metadata/ files
+   - Add example queries
+   - Tune parameters
+
+5. Integrate into your app
+   - Import MLBQueryClient
+   - Handle results
+   - Cache if needed
+
+================================================================================
+SUPPORT
+================================================================================
+
+Full documentation: INTEGRATION_GUIDE.md
+Logs: logs/mlb_agent.log and logs/mlb_client_*.log
+API docs: http://127.0.0.1:8000/docs
+
+Questions? Check logs first, then read INTEGRATION_GUIDE.md
+
+================================================================================
+YOU'RE READY!
+================================================================================
+
+Terminal 1: ollama serve
+Terminal 2: python mlb_fastapi_server.py
+Terminal 3: python mlb_ai_client.py
+
+That's it! Your MLB AI query system is live.
+
+Results will be in:
+- query_results/ (JSON, CSV, Markdown)
+- query_cache/ (automatic caching)
+- logs/ (debugging)
+
+================================================================================

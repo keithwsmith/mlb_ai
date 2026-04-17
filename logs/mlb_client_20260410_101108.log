@@ -1,0 +1,8 @@
+2026-04-10 10:11:08,075 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-10 10:11:08,081 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 10:11:08,087 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-10 10:11:08,087 - INFO - Health check: OK
+2026-04-10 10:11:08,090 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 10:11:08,094 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 144
+2026-04-10 10:11:08,095 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-10 10:11:08,096 - ERROR - Questions file not found: my_questions.json

@@ -1,0 +1,22 @@
+{
+  "dw.games": {
+    "description": "One row per MLB game. Contains schedule, score, status, and team references.",
+    "grain": "One row per game_pk",
+    "useful_for": ["scores", "schedules", "game results", "wins", "losses"]
+  },
+  "dw.teams": {
+    "description": "MLB team reference data. Join to games to get team names.",
+    "grain": "One row per team id",
+    "useful_for": ["team names", "abbreviations", "looking up team by name"]
+  },
+  "dw.players": {
+    "description": "Player biographical and roster data.",
+    "grain": "One row per player id",
+    "useful_for": ["player names", "positions", "jersey numbers"]
+  },
+  "dw.draft": {
+    "description": "Player draft data.",
+    "grain": "One row per player and year",
+    "useful_for": ["draft", "draft picks","draft school"]
+  }
+}

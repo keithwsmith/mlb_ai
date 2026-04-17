@@ -1,0 +1,42 @@
+2026-04-05 11:54:48,864 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-05 11:54:48,870 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 11:54:48,876 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-05 11:54:48,877 - INFO - Health check: OK
+2026-04-05 11:54:48,879 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 11:54:48,898 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 143
+2026-04-05 11:54:48,899 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-05 11:54:48,903 - INFO - Loaded 3 questions from questions.json (list format)
+2026-04-05 11:54:48,904 - INFO - Starting batch processing: 3 questions
+2026-04-05 11:54:48,904 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2020-2021
+2026-04-05 11:54:48,906 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 11:54:49,286 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 731
+2026-04-05 11:54:49,287 - INFO - Query successful: 3 rows (source=example)
+2026-04-05 11:54:49,290 - INFO - QUESTION: player, position, team,signing bonus for the TOP 10 signing bonus for each round in 2025 draft
+2026-04-05 11:54:49,291 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 11:54:49,761 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 3749
+2026-04-05 11:54:49,762 - INFO - Query successful: 75 rows (source=example)
+2026-04-05 11:54:49,765 - INFO - QUESTION: record, opponent of team the San Francisco Giants have the best record against since 1960
+2026-04-05 11:54:49,766 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 11:57:04,972 - ERROR - Connection error
+2026-04-05 11:57:04,987 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 3
+  Successful     : 2 (66.7%)
+  Failed         : 1
+
+  Total Rows     : 78
+  Avg Query Time : 0.269s
+  Total Time     : 136.08s
+
+==========================================
+
+  FAILED QUERIES:
+    - record, opponent of team the San Francisco Giants have the best record against s
+      Error: Could not connect to server at http://127.0.0.1:8000
+
+2026-04-05 11:57:04,993 - INFO - Results exported to query_results\results_20260405_115704.json
+2026-04-05 11:57:04,996 - INFO - Results exported to query_results\results_20260405_115704.csv
+2026-04-05 11:57:04,999 - INFO - Results exported to query_results\results_20260405_115704.md

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-04-09T18:25:08.914018",
+  "total_queries": 1,
+  "successful": 0,
+  "failed": 1,
+  "success_rate": 0.0,
+  "total_time": 430.4870939254761,
+  "results": [
+    {
+      "question": "which team does the San Francisco Giants have the best home record against from 2020-2025",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 0,
+      "error": "Could not connect to server at http://127.0.0.1:8000",
+      "success": false,
+      "row_count": 0
+    }
+  ]
+}

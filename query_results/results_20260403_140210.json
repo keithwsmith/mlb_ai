@@ -1,0 +1,175 @@
+{
+  "timestamp": "2026-04-03T14:02:10.573388",
+  "total_queries": 3,
+  "successful": 2,
+  "failed": 1,
+  "success_rate": 66.66666666666666,
+  "total_time": 2.4860002994537354,
+  "results": [
+    {
+      "question": "roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024",
+      "sql": "SELECT r25.person__full_name, r25.position__name, r25.jersey_number FROM dw.rosters r25 JOIN dw.teams t ON t.id = r25.parent_team_id WHERE t.name = 'New York Mets' AND r25.season = 2025 AND r25.status__code = 'A' AND r25.person__id NOT IN (SELECT r24.person__id FROM dw.rosters r24 JOIN dw.teams t2 ON t2.id = r24.parent_team_id WHERE t2.name = 'New York Mets' AND r24.season = 2024) ORDER BY r25.position__type, r25.person__full_name;",
+      "rows": [
+        [
+          "Hayden Senger",
+          "Catcher",
+          "30"
+        ],
+        [
+          "Ronny Mauricio",
+          "Third Base",
+          "10"
+        ],
+        [
+          "Jared Young",
+          "Outfielder",
+          "29"
+        ],
+        [
+          "Juan Soto",
+          "Outfielder",
+          "22"
+        ],
+        [
+          "Alex Carrillo",
+          "Pitcher",
+          "84"
+        ],
+        [
+          "Austin Warren",
+          "Pitcher",
+          "44"
+        ],
+        [
+          "Brandon Sproat",
+          "Pitcher",
+          "40"
+        ],
+        [
+          "Brandon Waddell",
+          "Pitcher",
+          "82"
+        ],
+        [
+          "Clay Holmes",
+          "Pitcher",
+          "35"
+        ],
+        [
+          "Huascar Brazob\u00e1n",
+          "Pitcher",
+          "43"
+        ],
+        [
+          "Jonah Tong",
+          "Pitcher",
+          "21"
+        ],
+        [
+          "Jonathan Pintaro",
+          "Pitcher",
+          "91"
+        ],
+        [
+          "Justin Hagenman",
+          "Pitcher",
+          "51"
+        ],
+        [
+          "Nolan McLean",
+          "Pitcher",
+          "26"
+        ],
+        [
+          "Richard Lovelady",
+          "Pitcher",
+          ""
+        ],
+        [
+          "Ryan Helsley",
+          "Pitcher",
+          "56"
+        ],
+        [
+          "Tyler Rogers",
+          "Pitcher",
+          "71"
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.155,
+      "time_db": 0.178,
+      "time_total": 0.334,
+      "error": null,
+      "success": true,
+      "row_count": 17
+    },
+    {
+      "question": "roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 1.7660343647003174,
+      "error": "['model requires more system memory (7.8 GiB) than is available (5.2 GiB) (status code: 500)', 'model requires more system memory (7.8 GiB) than is available (5.2 GiB) (status code: 500)', 'model requires more system memory (7.8 GiB) than is available (5.2 GiB) (status code: 500)']",
+      "success": false,
+      "row_count": 0
+    },
+    {
+      "question": "players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026",
+      "sql": "SELECT TOP (100) r.person__full_name,\n       t.name AS team_name,\n       r.position__name,\n       r.status__description,\n       r.season\n  FROM dw.rosters r\n  JOIN dw.teams t ON t.id = r.parent_team_id\n  WHERE t.name = 'San Francisco Giants'\n    AND r.season between 2024 and 2026\n    and r.status__description in ('Injured 10-Day', 'Injured 15-Day', 'Injured 60-Day')\n  ORDER BY r.season desc, r.status__description, r.person__full_name",
+      "rows": [
+        [
+          "Erik Miller",
+          "San Francisco Giants",
+          "Pitcher",
+          "Injured 60-Day",
+          2025
+        ],
+        [
+          "Randy Rodr\u00edguez",
+          "San Francisco Giants",
+          "Pitcher",
+          "Injured 60-Day",
+          2025
+        ],
+        [
+          "Jung Hoo Lee",
+          "San Francisco Giants",
+          "Outfielder",
+          "Injured 60-Day",
+          2024
+        ],
+        [
+          "Keaton Winn",
+          "San Francisco Giants",
+          "Pitcher",
+          "Injured 60-Day",
+          2024
+        ],
+        [
+          "Tom Murphy",
+          "San Francisco Giants",
+          "Catcher",
+          "Injured 60-Day",
+          2024
+        ],
+        [
+          "Wilmer Flores",
+          "San Francisco Giants",
+          "First Base",
+          "Injured 60-Day",
+          2024
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.153,
+      "time_db": 0.129,
+      "time_total": 0.282,
+      "error": null,
+      "success": true,
+      "row_count": 6
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+2026-04-02 18:13:35,500 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-02 18:13:35,516 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:13:35,532 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-02 18:13:35,533 - INFO - Health check: OK
+2026-04-02 18:13:35,546 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:13:35,578 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 132
+2026-04-02 18:13:35,579 - INFO - Model: sqlcoder:15b
+2026-04-02 18:13:35,624 - INFO - Loaded 3 questions from questions.json (list format)
+2026-04-02 18:13:35,638 - INFO - Starting batch processing: 3 questions
+2026-04-02 18:13:35,656 - INFO - QUESTION: roster changes between 2024 and 2025 for the New York Mets players on 2025 but not 2024
+2026-04-02 18:13:35,672 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:13:35,929 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 1744
+2026-04-02 18:13:35,930 - INFO - Query successful: 36 rows (source=example)
+2026-04-02 18:13:35,950 - INFO - QUESTION: roster changes between 2025 and 2026 for the New York Mets players on 2026 but not 2025
+2026-04-02 18:13:35,953 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:13:36,183 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 195
+2026-04-02 18:13:36,184 - ERROR - Query error: ["model 'sqlcoder:15b' not found (status code: 404)", "model 'sqlcoder:15b' not found (status code: 404)", "model 'sqlcoder:15b' not found (status code: 404)"]
+2026-04-02 18:13:36,199 - INFO - QUESTION: players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2024-2026
+2026-04-02 18:13:36,205 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-02 18:13:36,401 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 196
+2026-04-02 18:13:36,402 - ERROR - Query error: ["model 'sqlcoder:15b' not found (status code: 404)", "model 'sqlcoder:15b' not found (status code: 404)", "model 'sqlcoder:15b' not found (status code: 404)"]
+2026-04-02 18:13:36,414 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 3
+  Successful     : 1 (33.3%)
+  Failed         : 2
+
+  Total Rows     : 36
+  Avg Query Time : 0.226s
+  Total Time     : 0.77s
+
+==========================================
+
+  FAILED QUERIES:
+    - roster changes between 2025 and 2026 for the New York Mets players on 2026 but n
+      Error: ["model 'sqlcoder:15b' not found (status code: 404)", "model 'sqlcoder:15b' not found (status code: 404)", "model 'sqlco
+    - players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants 
+      Error: ["model 'sqlcoder:15b' not found (status code: 404)", "model 'sqlcoder:15b' not found (status code: 404)", "model 'sqlco
+
+2026-04-02 18:13:36,421 - INFO - Results exported to query_results\results_20260402_181336.json
+2026-04-02 18:13:36,424 - INFO - Results exported to query_results\results_20260402_181336.csv
+2026-04-02 18:13:36,427 - INFO - Results exported to query_results\results_20260402_181336.md

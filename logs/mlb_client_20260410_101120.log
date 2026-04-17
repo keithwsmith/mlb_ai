@@ -1,0 +1,34 @@
+2026-04-10 10:11:20,458 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-10 10:11:20,464 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 10:11:20,467 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-10 10:11:20,469 - INFO - Health check: OK
+2026-04-10 10:11:20,471 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 10:11:20,499 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 144
+2026-04-10 10:11:20,499 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-10 10:11:20,504 - INFO - Loaded 1 questions from questions.json (list format)
+2026-04-10 10:11:20,505 - INFO - Starting batch processing: 1 questions
+2026-04-10 10:11:20,505 - INFO - QUESTION: which team does the San Francisco Giants have the worst home record against from 2020-2025
+2026-04-10 10:11:20,507 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-10 10:21:20,532 - ERROR - Request timeout
+2026-04-10 10:21:20,538 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 1
+  Successful     : 0 (0.0%)
+  Failed         : 1
+
+  Total Rows     : 0
+  Avg Query Time : 600.000s
+  Total Time     : 600.03s
+
+==========================================
+
+  FAILED QUERIES:
+    - which team does the San Francisco Giants have the worst home record against from
+      Error: Request timeout after 600s
+
+2026-04-10 10:21:20,540 - INFO - Results exported to query_results\results_20260410_102120.json
+2026-04-10 10:21:20,541 - INFO - Results exported to query_results\results_20260410_102120.csv
+2026-04-10 10:21:20,543 - INFO - Results exported to query_results\results_20260410_102120.md

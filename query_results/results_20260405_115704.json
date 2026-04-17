@@ -1,0 +1,519 @@
+{
+  "timestamp": "2026-04-05T11:57:04.989542",
+  "total_queries": 3,
+  "successful": 2,
+  "failed": 1,
+  "success_rate": 66.66666666666666,
+  "total_time": 136.0825958251953,
+  "results": [
+    {
+      "question": "players on the 10-day,15-day or 60-Day injured list on the San Francisco Giants in 2020-2021",
+      "sql": "SELECT TOP (100)  r.person__full_name, t.name AS team_name,\n       r.position__name, r.status__description, r.season\nFROM dw.rosters r\nJOIN dw.teams t ON t.id = r.parent_team_id\nWHERE r.season BETWEEN 2020 AND 2021\nAND r.status__description IN ('Injured 10-Day', 'Injured 15-Day', 'Injured 60-Day')\nAND t.name = 'San Francisco Giants'\nORDER BY r.season DESC, r.status__description, r.person__full_name",
+      "rows": [
+        [
+          "Tyler Chatwood",
+          "San Francisco Giants",
+          "Pitcher",
+          "Injured 10-Day",
+          2021
+        ],
+        [
+          "Tyler Beede",
+          "San Francisco Giants",
+          "Pitcher",
+          "Injured 60-Day",
+          2021
+        ],
+        [
+          "Joey Rickard",
+          "San Francisco Giants",
+          "Outfield",
+          "Injured 60-Day",
+          2020
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.19,
+      "time_db": 0.166,
+      "time_total": 0.356,
+      "error": null,
+      "success": true,
+      "row_count": 3
+    },
+    {
+      "question": "player, position, team,signing bonus for the TOP 10 signing bonus for each round in 2025 draft",
+      "sql": "SELECT d.pick_round AS round, d.person__full_name, d.person__primary_position__name, CAST(d.signing_bonus AS decimal(18,2)) AS signing_bonus FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY pick_round ORDER BY CAST(ISNULL(NULLIF(signing_bonus, ''), '0') AS decimal(18,2)) DESC) AS rn FROM dw.draft WHERE year = 2025 AND signing_bonus IS NOT NULL AND signing_bonus <> '') d WHERE d.rn <= 3 ORDER BY d.pick_round, CAST(d.signing_bonus AS decimal(18,2)) DESC;",
+      "rows": [
+        [
+          "1",
+          "Ethan Holliday",
+          "Shortstop",
+          9000000.0
+        ],
+        [
+          "1",
+          "Kade Anderson",
+          "Pitcher",
+          8800000.0
+        ],
+        [
+          "1",
+          "Eli Willits",
+          "Shortstop",
+          8200000.0
+        ],
+        [
+          "10",
+          "Austin Newton",
+          "Pitcher",
+          195100.0
+        ],
+        [
+          "10",
+          "Jake McCutcheon",
+          "Second Base",
+          192200.0
+        ],
+        [
+          "10",
+          "Maximus Martin",
+          "Shortstop",
+          191300.0
+        ],
+        [
+          "11",
+          "CJ Hughes",
+          "Shortstop",
+          700000.0
+        ],
+        [
+          "11",
+          "Truitt Madonna",
+          "Catcher",
+          654000.0
+        ],
+        [
+          "11",
+          "Luke Dotson",
+          "Pitcher",
+          500000.0
+        ],
+        [
+          "12",
+          "Blaine Bullard",
+          "Outfield",
+          1697500.0
+        ],
+        [
+          "12",
+          "Talon Haley",
+          "Pitcher",
+          897500.0
+        ],
+        [
+          "12",
+          "Truman Pauley",
+          "Pitcher",
+          400000.0
+        ],
+        [
+          "13",
+          "Xavier Mitchell",
+          "Pitcher",
+          872500.0
+        ],
+        [
+          "13",
+          "Tyson Moran",
+          "Shortstop",
+          247500.0
+        ],
+        [
+          "13",
+          "Callan Fang",
+          "Pitcher",
+          177500.0
+        ],
+        [
+          "14",
+          "JC Vanek",
+          "First Base",
+          347500.0
+        ],
+        [
+          "14",
+          "TJ Ford",
+          "Outfield",
+          272500.0
+        ],
+        [
+          "14",
+          "Luke Heyman",
+          "Catcher",
+          230000.0
+        ],
+        [
+          "15",
+          "McLane Moody",
+          "Pitcher",
+          460600.0
+        ],
+        [
+          "15",
+          "Andrew Shaffner",
+          "Pitcher",
+          240000.0
+        ],
+        [
+          "15",
+          "DJ Newman",
+          "Two-Way Player",
+          202500.0
+        ],
+        [
+          "16",
+          "Logan Dawson",
+          "Shortstop",
+          242500.0
+        ],
+        [
+          "16",
+          "Alex Breckheimer",
+          "Pitcher",
+          200000.0
+        ],
+        [
+          "16",
+          "Jonathan Stevens",
+          "Pitcher",
+          172400.0
+        ],
+        [
+          "17",
+          "Carter Gwost",
+          "Outfield",
+          497500.0
+        ],
+        [
+          "17",
+          "Sam Horn",
+          "Pitcher",
+          497500.0
+        ],
+        [
+          "17",
+          "Luke Mensik",
+          "Pitcher",
+          482500.0
+        ],
+        [
+          "18",
+          "Grayson Boles",
+          "Pitcher",
+          500000.0
+        ],
+        [
+          "18",
+          "Landon Arroyos",
+          "Shortstop",
+          252500.0
+        ],
+        [
+          "18",
+          "Rylan Mills",
+          "Catcher",
+          247500.0
+        ],
+        [
+          "19",
+          "Chase Bentley",
+          "Pitcher",
+          757500.0
+        ],
+        [
+          "19",
+          "Cory Geinzer",
+          "Pitcher",
+          225000.0
+        ],
+        [
+          "19",
+          "Meridian Leffew",
+          "Shortstop",
+          164500.0
+        ],
+        [
+          "1C",
+          "Caden Bodine",
+          "Catcher",
+          3113300.0
+        ],
+        [
+          "1C",
+          "Wehiwa Aloy",
+          "Shortstop",
+          3042800.0
+        ],
+        [
+          "1C",
+          "Patrick Forbes",
+          "Pitcher",
+          3000000.0
+        ],
+        [
+          "2",
+          "Jaden Fauske",
+          "Outfield",
+          2997500.0
+        ],
+        [
+          "2",
+          "Nick Becker",
+          "Shortstop",
+          2750000.0
+        ],
+        [
+          "2",
+          "Aaron Watson",
+          "Pitcher",
+          2747500.0
+        ],
+        [
+          "20",
+          "Ma'Kale Holden",
+          "Pitcher",
+          410000.0
+        ],
+        [
+          "20",
+          "Jamaurion McQueen",
+          "Outfield",
+          280000.0
+        ],
+        [
+          "20",
+          "Connor Gehr",
+          "Pitcher",
+          230500.0
+        ],
+        [
+          "2C",
+          "Henry Godbout",
+          "Shortstop",
+          1093800.0
+        ],
+        [
+          "3",
+          "Landon Harmon",
+          "Pitcher",
+          2500000.0
+        ],
+        [
+          "3",
+          "Johnny Slawinski",
+          "Pitcher",
+          2497500.0
+        ],
+        [
+          "3",
+          "Anthony Eyanson",
+          "Pitcher",
+          1750000.0
+        ],
+        [
+          "4",
+          "Briggs McKenzie",
+          "Pitcher",
+          2997500.0
+        ],
+        [
+          "4",
+          "Miguel Sime Jr.",
+          "Pitcher",
+          2000000.0
+        ],
+        [
+          "4",
+          "Kaleb Wing",
+          "Pitcher",
+          1500000.0
+        ],
+        [
+          "4C",
+          "Dixon Williams",
+          "Second Base",
+          497500.0
+        ],
+        [
+          "5",
+          "Coy James",
+          "Shortstop",
+          2500000.0
+        ],
+        [
+          "5",
+          "Ty Harvey",
+          "Catcher",
+          1500000.0
+        ],
+        [
+          "5",
+          "CJ Gray",
+          "Pitcher",
+          1247500.0
+        ],
+        [
+          "6",
+          "Josiah Hartshorn",
+          "Outfield",
+          2000000.0
+        ],
+        [
+          "6",
+          "Jack Wheeler",
+          "Third Base",
+          525000.0
+        ],
+        [
+          "6",
+          "Luke LaCourse",
+          "Pitcher",
+          512500.0
+        ],
+        [
+          "7",
+          "Matthew Fisher",
+          "Pitcher",
+          1250000.0
+        ],
+        [
+          "7",
+          "Jase Mitchell",
+          "Catcher",
+          797500.0
+        ],
+        [
+          "7",
+          "Cale Wetwiska",
+          "Pitcher",
+          647500.0
+        ],
+        [
+          "8",
+          "Camden Lohman",
+          "Pitcher",
+          797500.0
+        ],
+        [
+          "8",
+          "Mac Heuer",
+          "Pitcher",
+          400000.0
+        ],
+        [
+          "8",
+          "Tanner Thach",
+          "First Base",
+          325000.0
+        ],
+        [
+          "9",
+          "Reid Worley",
+          "Pitcher",
+          747500.0
+        ],
+        [
+          "9",
+          "Kaiden Wilson",
+          "Pitcher",
+          697500.0
+        ],
+        [
+          "9",
+          "Matthew Ferrara",
+          "Shortstop",
+          597500.0
+        ],
+        [
+          "CB-A",
+          "Slater de Brun",
+          "Outfield",
+          4000000.0
+        ],
+        [
+          "CB-A",
+          "Luke Stevenson",
+          "Catcher",
+          2800000.0
+        ],
+        [
+          "CB-A",
+          "Riley Quick",
+          "Pitcher",
+          2692000.0
+        ],
+        [
+          "CB-B",
+          "Justin Lamkin",
+          "Pitcher",
+          1161200.0
+        ],
+        [
+          "CB-B",
+          "JT Quinn",
+          "Pitcher",
+          1147500.0
+        ],
+        [
+          "CB-B",
+          "Tanner Franklin",
+          "Pitcher",
+          1145900.0
+        ],
+        [
+          "PPI",
+          "Josh Hammond",
+          "Shortstop",
+          3197500.0
+        ],
+        [
+          "SUP-2",
+          "Dean Moss",
+          "Outfield",
+          1285400.0
+        ],
+        [
+          "SUP-2",
+          "Frank Cairone",
+          "Pitcher",
+          1097500.0
+        ],
+        [
+          "SUP-3",
+          "Nate Snead",
+          "Pitcher",
+          597500.0
+        ]
+      ],
+      "source": "example",
+      "time_llm": 0.203,
+      "time_db": 0.247,
+      "time_total": 0.451,
+      "error": null,
+      "success": true,
+      "row_count": 75
+    },
+    {
+      "question": "record, opponent of team the San Francisco Giants have the best record against since 1960",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 0,
+      "error": "Could not connect to server at http://127.0.0.1:8000",
+      "success": false,
+      "row_count": 0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-04-10T10:21:20.539935",
+  "total_queries": 1,
+  "successful": 0,
+  "failed": 1,
+  "success_rate": 0.0,
+  "total_time": 600.0327632427216,
+  "results": [
+    {
+      "question": "which team does the San Francisco Giants have the worst home record against from 2020-2025",
+      "sql": "",
+      "rows": [],
+      "source": "error",
+      "time_llm": 0,
+      "time_db": 0,
+      "time_total": 600,
+      "error": "Request timeout after 600s",
+      "success": false,
+      "row_count": 0
+    }
+  ]
+}

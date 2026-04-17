@@ -1,0 +1,35 @@
+2026-04-05 14:13:16,826 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-05 14:13:16,835 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 14:13:16,842 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-05 14:13:16,844 - INFO - Health check: OK
+2026-04-05 14:13:16,846 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 14:13:16,853 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 145
+2026-04-05 14:13:16,854 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-05 14:13:16,866 - INFO - Loaded 1 questions from questions.json (list format)
+2026-04-05 14:13:16,867 - INFO - Starting batch processing: 1 questions
+2026-04-05 14:13:16,868 - INFO - QUESTION: record, team the San Francisco Giants have the best home record against since 1960
+2026-04-05 14:13:16,870 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-05 14:18:11,301 - DEBUG - http://127.0.0.1:8000 "POST /ask HTTP/1.1" 200 273
+2026-04-05 14:18:11,317 - ERROR - Query error: ['[WinError 10054] An existing connection was forcibly closed by the remote host', '[WinError 10051] A socket operation was attempted to an unreachable network', '[WinError 10051] A socket operation was attempted to an unreachable network']
+2026-04-05 14:18:11,500 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 1
+  Successful     : 0 (0.0%)
+  Failed         : 1
+
+  Total Rows     : 0
+  Avg Query Time : 294.449s
+  Total Time     : 294.63s
+
+==========================================
+
+  FAILED QUERIES:
+    - record, team the San Francisco Giants have the best home record against since 19
+      Error: ['[WinError 10054] An existing connection was forcibly closed by the remote host', '[WinError 10051] A socket operation 
+
+2026-04-05 14:18:11,504 - INFO - Results exported to query_results\results_20260405_141811.json
+2026-04-05 14:18:11,506 - INFO - Results exported to query_results\results_20260405_141811.csv
+2026-04-05 14:18:11,508 - INFO - Results exported to query_results\results_20260405_141811.md

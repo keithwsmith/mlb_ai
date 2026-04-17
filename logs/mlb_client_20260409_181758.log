@@ -1,0 +1,34 @@
+2026-04-09 18:17:58,397 - INFO - Client initialized: http://127.0.0.1:8000 (cache=disabled)
+2026-04-09 18:17:58,404 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-09 18:17:58,409 - DEBUG - http://127.0.0.1:8000 "GET / HTTP/1.1" 200 1058
+2026-04-09 18:17:58,409 - INFO - Health check: OK
+2026-04-09 18:17:58,411 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-09 18:17:58,414 - DEBUG - http://127.0.0.1:8000 "GET /model HTTP/1.1" 200 144
+2026-04-09 18:17:58,418 - INFO - Model: mistral:7b-instruct-q4_0
+2026-04-09 18:17:58,419 - INFO - Loaded 1 questions from questions.json (list format)
+2026-04-09 18:17:58,419 - INFO - Starting batch processing: 1 questions
+2026-04-09 18:17:58,420 - INFO - QUESTION: which team does the San Francisco Giants have the best home record against from 2020-2025
+2026-04-09 18:17:58,421 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2026-04-09 18:25:08,905 - ERROR - Connection error
+2026-04-09 18:25:08,908 - INFO - 
+==========================================
+       BATCH PROCESSING SUMMARY          
+==========================================
+
+  Total Queries  : 1
+  Successful     : 0 (0.0%)
+  Failed         : 1
+
+  Total Rows     : 0
+  Avg Query Time : 0.000s
+  Total Time     : 430.49s
+
+==========================================
+
+  FAILED QUERIES:
+    - which team does the San Francisco Giants have the best home record against from 
+      Error: Could not connect to server at http://127.0.0.1:8000
+
+2026-04-09 18:25:08,915 - INFO - Results exported to query_results\results_20260409_182508.json
+2026-04-09 18:25:08,918 - INFO - Results exported to query_results\results_20260409_182508.csv
+2026-04-09 18:25:08,921 - INFO - Results exported to query_results\results_20260409_182508.md

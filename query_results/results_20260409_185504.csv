@@ -1,0 +1,2 @@
+Question,Success,Row Count,Source,LLM Time (s),DB Time (s),Total Time (s),Error
+which team does the San Francisco Giants have the worst home record against from 2020-2025,Yes,29,example,0.027,0.221,0.249,
