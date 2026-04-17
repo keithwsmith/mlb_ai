@@ -1,0 +1,12 @@
+.idea/
+.venv
+venv
+__pycache__/
+logs/
+metadata/
+query_cache/
+query_results/
+mlb_agent.log
+questions.json
+questions.txt
+str
