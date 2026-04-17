@@ -1,12 +1,13 @@
 .idea/
-.venv
-venv
-__pycache__/
+.venv/
 logs/
 metadata/
 query_cache/
 query_results/
+__pycache__/
 mlb_agent.log
 questions.json
 questions.txt
 str
+.env
+venv
